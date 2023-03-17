@@ -28,8 +28,8 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/faq" element={<Faq />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/faq" element={<Faq/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
