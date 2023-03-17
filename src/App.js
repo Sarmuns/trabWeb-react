@@ -12,18 +12,6 @@ import Faq from './pages/Faq';
 
 function App() {
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/Faq",
-      element: <Faq />,
-    },
-  ]);
-
-
   return (
     <BrowserRouter>
       <Header />
