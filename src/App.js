@@ -16,8 +16,8 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/faq" element={<Faq />} />
+        <Route path="/" element={<Home className="home"/>} />
+        <Route path="/faq" element={<Faq className="faq"/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
