@@ -4,15 +4,12 @@ import "./FooterMenuList.css";
 function FooterMenuList(props) {
   const { type } = props;
 
-  console.log(props);
-  let menuItems = ['Null']
-  if(type==='colA'){
-    menuItems = ['Empresa','Sobre', 'Empregos', 'For The Record']
-  } else if(type==='colB'){
-    menuItems = ['Comunidades','Para Artistas', 'Desenvolvedores', 'For the Record', 'Investidores', 'Fornecedores']
-  } else if(type==='colC'){
-    menuItems = ['Links Úteis', 'Suporte', 'Player da Web', 'Aplicativo móvel grátis']
+  const menuItemsMap = {
+    colA: ['Empresa', 'Sobre', 'Empregos', 'For The Record'],
+    colB: ['Comunidades', 'Para Artistas', 'Desenvolvedores', 'For the Record', 'Investidores', 'Fornecedores'],
+    colC: ['Links Úteis', 'Suporte', 'Player da Web', 'Aplicativo móvel grátis']
   }
+  const menuItems = menuItemsMap[type] || ['Null'];
 
 
   return (
