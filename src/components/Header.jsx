@@ -10,17 +10,17 @@ function Header() {
         <nav className="navbar navbar-expand-lg navbar-light bg-success sticky-top">
 
             <Link
-                className="navbar-brand"
+                className="navbar-brand mx-3"
                 to="/">
                 <img src="./logo.png"
                     alt="Logo"
                     width="30"
                     height="24"
-                    className="d-inline-block align-text-top img-fluid" />
+                    className="d-inline-block align-text-top img-fluid mx-1" />
                 Spotify
             </Link>
 
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div className="collapse navbar-collapse mx-3" id="navbarNav">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
                         <Link
