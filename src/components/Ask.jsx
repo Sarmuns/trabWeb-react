@@ -5,32 +5,28 @@ import React, { useEffect } from 'react';
 
 function Ask(){
    
-    useEffect(() => {
-        $(document).ready(function() {
-          $('.accordion-button').click(function() {
-            const target = $(this).attr('data-bs-target');
-            if ($(target).hasClass('show')) {
-              $(this).removeClass('collapsed');
-              $(target).slideUp('fast');
-              $(target).removeClass('show');
-            } else {
-              $('.accordion-button').removeClass('collapsed');
-              $('.accordion-collapse').slideUp('fast');
-              $('.accordion-collapse').removeClass('show');
-              $(this).addClass('collapsed');
-              $(target).slideDown('fast', function() {
-                $(this).addClass('show');
-              });
-            }
+  useEffect(() => {
+    $(document).ready(function() {
+      $('.accordion-button').off('click').on('click', function() {
+        const target = $(this).attr('data-bs-target');
+        if ($(target).hasClass('show')) {
+          $(this).removeClass('collapsed');
+          $(target).slideUp('fast');
+          $(target).removeClass('show');
+        } else {
+          $('.accordion-button').removeClass('collapsed');
+          $('.accordion-collapse').slideUp('fast');
+          $('.accordion-collapse').removeClass('show');
+          $(this).addClass('collapsed');
+          $(target).slideDown('fast', function() {
+            $(this).addClass('show');
           });
-        });
-      }, []);
+        }
+      });
+    });
+  }, []);
+  
       
-      
-      
-    
-      
-    
 return(
     <div className="faq bg-dark">
         <h2 className="text-center">Ajuda rápida:</h2>
@@ -77,48 +73,52 @@ return(
                         Criei uma nova conta. Posso transferir minhas playlists, músicas salvas e seguidores?
                     </button>
                 </h2>
+                <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour"  data-bs-parent="#accordionExample">
+                  <div className="accordion-body">
+                    Sim, é possível transferir suas playlists, músicas salvas e seguidores de uma conta antiga para uma nova. Para fazer isso, você precisará entrar em contato com o suporte ao cliente do Spotify e solicitar a transferência de dados. Este processo pode levar alguns dias para ser concluído.
+                  </div>
             </div>
-            <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour"  data-bs-parent="#accordionExample">
-            <div className="accordion-body">
-                 Sim, é possível transferir suas playlists, músicas salvas e seguidores de uma conta antiga para uma nova. Para fazer isso, você precisará entrar em contato com o suporte ao cliente do Spotify e solicitar a transferência de dados. Este processo pode levar alguns dias para ser concluído.
-              </div>
             </div>
+            
             <div className="accordion-item">
                 <h2 className="accordion-header" id="headingFive">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                     Como funciona a oferta Premium de 1 mês grátis?
                     </button>
                 </h2>
-            </div>
-            <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive"  data-bs-parent="#accordionExample">
-                <div className="accordion-body">
-                A oferta Premium de 1 mês grátis é uma promoção oferecida pelo Spotify para novos usuários que desejam experimentar o serviço Premium. Para aproveitar a oferta, basta criar uma nova conta no Spotify e selecionar a opção Premium durante o período de inscrição. Você poderá desfrutar de todos os recursos Premium do Spotify gratuitamente por um mês inteiro.
+                <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive"  data-bs-parent="#accordionExample">
+                  <div className="accordion-body">
+                    A oferta Premium de 1 mês grátis é uma promoção oferecida pelo Spotify para novos usuários que desejam experimentar o serviço Premium. Para aproveitar a oferta, basta criar uma nova conta no Spotify e selecionar a opção Premium durante o período de inscrição. Você poderá desfrutar de todos os recursos Premium do Spotify gratuitamente por um mês inteiro.
+                  </div>
                 </div>
             </div>
+           
             <div className="accordion-item">
                 <h2 className="accordion-header" id="headingSix">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                     Como solucionar problemas do Spotify no PlayStation?
                     </button>
                 </h2>
-            </div>
-            <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix"  data-bs-parent="#accordionExample">
+                <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix"  data-bs-parent="#accordionExample">
                 <div className="accordion-body">
                 Se você está tendo problemas para usar o Spotify no PlayStation, verifique se o aplicativo está atualizado para a versão mais recente. Certifique-se também de que sua conta do PlayStation Network esteja conectada à sua conta do Spotify. Se ainda estiver enfrentando problemas, tente reiniciar o PlayStation e o roteador de internet para resolver problemas de conexão.
                 </div>
             </div>
+            </div>
+           
             <div className="accordion-item">
                 <h2 className="accordion-header" id="headingSeven">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                     O que é sessão privada e como isso afeta minhas recomendações? 
                     </button>
                 </h2>
-            </div>
-            <div id="collapseSeven" className="accordion-collapse collapse" aria-labelledby="headingSeven"  data-bs-parent="#accordionExample">
+                <div id="collapseSeven" className="accordion-collapse collapse" aria-labelledby="headingSeven"  data-bs-parent="#accordionExample">
                 <div className="accordion-body">
                 A sessão privada é uma opção disponível no Spotify que permite aos usuários ouvirem música sem que suas escolhas afetem suas recomendações de músicas. Quando a sessão privada está ativada, o Spotify não registra as músicas ouvidas pelo usuário, não atualiza as playlists do usuário com base em suas escolhas e não usa as inhtmlFormações de histórico de escuta do usuário para personalizar suas recomendações.
                 </div>
             </div>
+            </div>
+            
         </div>      
     </div>   
     );
