@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css"
 
@@ -5,6 +6,7 @@ import "./Header.css"
 const Header = () => {
     const location = useLocation();
     let isHomePage = location.pathname === "/";
+    let isFaq = location.pathname ==="/faq"
     //A medida que novas páginas forem criadas adicionar o location delas também
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-success sticky-top">
@@ -31,7 +33,7 @@ const Header = () => {
                     </li>
                     <li className="nav-item">
                         <Link
-                            className={isHomePage ? 'nav-link' : 'nav-link active'}
+                            className={isFaq ? 'nav-link  active' : 'nav-link'}
                             to="/faq">
                             FAQ
                         </Link>

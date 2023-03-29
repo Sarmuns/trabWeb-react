@@ -1,3 +1,4 @@
+import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faTwitter, faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import FooterMenuList from './FooterMenuList';

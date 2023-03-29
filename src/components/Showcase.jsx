@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import './Showcase.css';
 import background from './showcase.webp'
 
@@ -8,7 +10,11 @@ const Showcase = () => {
       <div className="showcase-container">
         <h2>Música para todos.</h2>
         <p>Milhões de músicas a sua escolha. E nem precisa de cartão de crédito.</p>
-        <a href='#!' className="btn btn-primary">Obtenha o spotify free.</a>
+        <Link
+          to="/playlist">
+          <a href='#!' className="btn btn-primary">Veja nossas playlists gratuítas</a>
+        </Link>
+
       </div>
     </div>
   );

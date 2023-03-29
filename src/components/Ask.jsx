@@ -1,6 +1,6 @@
+import React, { useEffect } from 'react';
 import './Ask.css';
 import $ from 'jquery';
-import React, { useEffect } from 'react';
 
 
 const Ask = () => {
