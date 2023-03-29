@@ -1,8 +1,9 @@
 {
-  "qtdPlay": 5,
+  "count": 5,
   "playlists": [
     {
       "nome": "Rock Alternativo",
+      "id" : 1,
       "qtdMusicas": 3,
       "fotoPlaylist": "https://example.com/rock-alt.jpg",
       "musicas": [
@@ -34,7 +35,8 @@
     },
     {
       "nome": "Rock Internacional",
-      "qtdMusicas": 3,
+      "id" : 2,
+      "count": 3,
       "fotoPlaylist": "https://example.com/rock-int.jpg",
       "musicas": [
         {
@@ -65,7 +67,8 @@
     },
     {
       "nome": "Linkin Park",
-      "qtdMusicas": 3,
+      "id" : 3,
+      "count": 3,
       "fotoPlaylist": "https://example.com/linkin-park.jpg",
       "musicas": [
         {
@@ -77,7 +80,7 @@
           "audioFile": "https://example.com/linkin-park-numb.mp3"
         },
         {
-          "nome": "Crawling",
+          "nome": "Given Up",
           "artista": "Linkin Park",
           "album": "Hybrid Theory",
           "genero": "Nu Metal",
@@ -96,7 +99,8 @@
     },
     {
       "nome": "Para Malhar",
-      "qtdMusicas": 3,
+      "id" : 4,
+      "count": 3,
       "fotoPlaylist": "https://example.com/para-malhar.jpg",
       "musicas": [
         {
@@ -127,7 +131,8 @@
     },
     {
       "nome": "Bossa Nova",
-      "qtdMusicas": 3,
+      "id" : 5,
+      "count": 3,
       "fotoPlaylist": "https://example.com/bossa-nova.jpg",
       "musicas": [
         {
