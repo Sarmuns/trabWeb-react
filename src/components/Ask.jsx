@@ -28,7 +28,7 @@ const Ask = () => {
 
 
   return (
-    <div className="faq">
+    <div className="faq my-5">
       <h2 className="text-center">Ajuda rápida:</h2>
       <div className="accordion" id="accordionExample">
         <div className="accordion-item">
