@@ -3,7 +3,7 @@ import { faInstagram, faTwitter, faFacebookF } from '@fortawesome/free-brands-sv
 import FooterMenuList from './FooterMenuList';
 import "./Footer.css"
 
-function Footer() {
+const Footer = () => {
   return (
     <div id="footer">
       <div className="footer-content">

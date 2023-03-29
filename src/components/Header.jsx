@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import "./Header.css"
 
 
-function Header() {
+const Header = () => {
     const location = useLocation();
     let isHomePage = location.pathname === "/";
     //A medida que novas páginas forem criadas adicionar o location delas também

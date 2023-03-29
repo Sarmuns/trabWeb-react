@@ -1,7 +1,7 @@
 import React from 'react';
 import "./FooterMenuList.css";
 
-function FooterMenuList(props) {
+const FooterMenuList = (props) => {
   const { type } = props;
 
   const menuItemsMap = {

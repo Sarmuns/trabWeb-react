@@ -1,7 +1,7 @@
 import './Showcase.css';
 import background from './showcase.webp'
 
-function Showcase() {
+const Showcase = () => {
   // const background = process.env.PUBLIC_URL + '/img/showcase.webp';
   return (
     <div id="showcase" style={{ backgroundImage: `url(${background})` }}>
