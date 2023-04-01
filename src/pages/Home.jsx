@@ -1,6 +1,7 @@
+import React from "react";
 import Showcase from "../components/Showcase"
 
-function Home() {
+const Home = () => {
     return (<Showcase />)
 }
 

@@ -1,0 +1,165 @@
+{
+  "count": 5,
+  "playlists": [
+    {
+      "nome": "Rock Alternativo",
+      "id" : 1,
+      "qtdMusicas": 3,
+      "fotoPlaylist": "/playlist/rockAlternativo.jpg",
+      "musicas": [
+        {
+          "nome": "In the End",
+          "artista": "Linkin Park",
+          "album": "Hybrid Theory",
+          "genero": "Rock Alternativo",
+          "fotoAlbum": "https://example.com/hybrid-theory.jpg",
+          "audioFile": "https://example.com/linkin-park-in-the-end.mp3"
+        },
+        {
+          "nome": "Kryptonite",
+          "artista": "3 Doors Down",
+          "album": "The Better Life",
+          "genero": "Rock Alternativo",
+          "fotoAlbum": "https://example.com/the-better-life.jpg",
+          "audioFile": "https://example.com/3-doors-down-kryptonite.mp3"
+        },
+        {
+          "nome": "Last Resort",
+          "artista": "Papa Roach",
+          "album": "Infest",
+          "genero": "Rock Alternativo",
+          "fotoAlbum": "https://example.com/infest.jpg",
+          "audioFile": "https://example.com/papa-roach-last-resort.mp3"
+        }
+      ]
+    },
+    {
+      "nome": "Rock Internacional",
+      "id" : 2,
+      "count": 3,
+      "fotoPlaylist": "/playlist/rockInternacional.jpg",
+      "musicas": [
+        {
+          "nome": "Sweet Child O' Mine",
+          "artista": "Guns N' Roses",
+          "album": "Appetite for Destruction",
+          "genero": "Rock Internacional",
+          "fotoAlbum": "https://example.com/appetite-for-destruction.jpg",
+          "audioFile": "https://example.com/guns-n-roses-sweet-child-o-mine.mp3"
+        },
+        {
+          "nome": "Livin' on a Prayer",
+          "artista": "Bon Jovi",
+          "album": "Slippery When Wet",
+          "genero": "Rock Internacional",
+          "fotoAlbum": "https://example.com/slippery-when-wet.jpg",
+          "audioFile": "https://example.com/bon-jovi-livin-on-a-prayer.mp3"
+        },
+        {
+          "nome": "Stairway to Heaven",
+          "artista": "Led Zeppelin",
+          "album": "Led Zeppelin IV",
+          "genero": "Rock Internacional",
+          "fotoAlbum": "https://example.com/led-zeppelin-iv.jpg",
+          "audioFile": "https://example.com/led-zeppelin-stairway-to-heaven.mp3"
+        }
+      ]
+    },
+    {
+      "nome": "Linkin Park",
+      "id" : 3,
+      "count": 3,
+      "fotoPlaylist": "/playlist/linkinPark.jpg",
+      "musicas": [
+        {
+          "nome": "Numb",
+          "artista": "Linkin Park",
+          "album": "Meteora",
+          "genero": "Nu Metal",
+          "fotoAlbum": "https://example.com/meteora.jpg",
+          "audioFile": "https://example.com/linkin-park-numb.mp3"
+        },
+        {
+          "nome": "Given Up",
+          "artista": "Linkin Park",
+          "album": "Hybrid Theory",
+          "genero": "Nu Metal",
+          "fotoAlbum": "https://example.com/hybrid-theory.jpg",
+          "audioFile": "https://example.com/linkin-park-crawling.mp3"
+        },
+        {
+          "nome": "Breaking the Habit",
+          "artista": "Linkin Park",
+          "album": "Meteora",
+          "genero": "Nu Metal",
+          "fotoAlbum": "https://example.com/meteora.jpg",
+          "audioFile": "https://example.com/linkin-park-breaking-the-habit.mp3"
+        }
+      ]
+    },
+    {
+      "nome": "Para Malhar",
+      "id" : 4,
+      "count": 3,
+      "fotoPlaylist": "/playlist/paraMalhar.jpg",
+      "musicas": [
+        {
+          "nome": "Can't Hold Us",
+          "artista": "Macklemore & Ryan Lewis feat. Ray Dalton",
+          "album": "The Heist",
+          "genero": "Hip Hop",
+          "fotoAlbum": "https://example.com/the-heist.jpg",
+          "audioFile": "https://example.com/macklemore-ryan-lewis-cant-hold-us.mp3"
+        },
+        {
+          "nome": "Lose Yourself",
+          "artista": "Eminem",
+          "album": "8 Mile Soundtrack",
+          "genero": "Hip Hop",
+          "fotoAlbum": "https://example.com/8-mile-soundtrack.jpg",
+          "audioFile": "https://example.com/eminem-lose-yourself.mp3"
+        },
+        {
+          "nome": "Eye of the Tiger",
+          "artista": "Survivor",
+          "album": "Eye of the Tiger",
+          "genero": "Rock",
+          "fotoAlbum": "https://example.com/eye-of-the-tiger.jpg",
+          "audioFile": "https://example.com/survivor-eye-of-the-tiger.mp3"
+        }
+      ]
+    },
+    {
+      "nome": "Bossa Nova",
+      "id" : 5,
+      "count": 3,
+      "fotoPlaylist": "/playlist/bossaNova.jpg",
+      "musicas": [
+        {
+          "nome": "Garota de Ipanema",
+          "artista": "Antônio Carlos Jobim",
+          "album": "The Composer of Desafinado, Plays",
+          "genero": "Bossa Nova",
+          "fotoAlbum": "https://example.com/the-composer-of-desafinado-plays.jpg",
+          "audioFile": "https://example.com/antonio-carlos-jobim-garota-de-ipanema.mp3"
+        },
+        {
+          "nome": "Chega de Saudade",
+          "artista": "João Gilberto",
+          "album": "Chega de Saudade",
+          "genero": "Bossa Nova",
+          "fotoAlbum": "https://example.com/chega-de-saudade.jpg",
+          "audioFile": "https://example.com/joao-gilberto-chega-de-saudade.mp3"
+        },
+        {
+          "nome": "Wave",
+          "artista": "Antônio Carlos Jobim",
+          "album": "Wave",
+          "genero": "Bossa Nova",
+          "fotoAlbum": "https://example.com/wave.jpg",
+          "audioFile": "https://example.com/antonio-carlos-jobim-wave.mp3"
+        }
+      ]
+    }
+  ]
+}
