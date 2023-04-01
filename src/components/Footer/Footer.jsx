@@ -9,7 +9,7 @@ const Footer = () => {
     <div id="footer">
       <div className="footer-content">
         <div className="logo-container">
-          <img src="./logoWhite.png" alt="Logo do Spotify e com texto escrito Spotify, ambos em" className="logo" />
+          <img src="/logoWhite.png" alt="Logo do Spotify e com texto escrito Spotify, ambos em" className="logo" />
         </div>
         <FooterMenuList type="colA" />
         <FooterMenuList type="colB" />
@@ -32,7 +32,7 @@ const Footer = () => {
         <div className="rights">
           <div className="country">
             <p>Brasil</p>
-            <img src="./img/brazil.png" alt="bandeira do Brasil" className="brazil-flag" />
+            <img src="/img/brazil.png" alt="bandeira do Brasil" className="brazil-flag" />
           </div>
           <p>&copy; 2023 Spotify AB</p>
         </div>
