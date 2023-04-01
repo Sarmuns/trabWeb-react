@@ -4,20 +4,28 @@ import './Card.css'
 
 
 const Card = (props) => {
-    const {data} = props
+    const { data } = props
 
     return (
-        <div className='control h-25 w-50 d-flex flex-column m-auto justify-content-between'>
-            <h1 className='text-light m-auto mb-5'>Para geral curtir de graça!</h1>
-            <div className='d-flex d-row'>
-            {data.playlists.map(playlist => (
-                <Link to={`/playlist/${playlist.id}`} key={playlist.id}className="link m-auto">
-                    
-                <img src={playlist.fotoPlaylist} className="card bg-success mx-1 my-2" alt={playlist.nome} />
-                </Link>
+        <div className='control d-flex flex-column'>
+            <h1
+                className='text-light mb-5 m-auto'
+            >Para geral curtir de graça!</h1>
+            <div className='cardList d-flex m-auto mb-5'>
+                {data.playlists.map(playlist => (
+                    <Link
+                        to={`/playlist/${playlist.id}`}
+                        key={playlist.id}
+                    >
+                        <img
+                            src={playlist.fotoPlaylist}
+                            className="card bg-success"
+                            alt={playlist.nome}
+                        />
+                    </Link>
 
-))}
-</div>
+                ))}
+            </div>
         </div>
     );
 }

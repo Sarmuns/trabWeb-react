@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<Home className="home"/>} />
         <Route path="/faq" element={<Faq className="faq"/>} />
         <Route path="/playlist" element={<Playlist classNqme="playlist"/>} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} /> 
       </Routes>
       <Footer />
     </BrowserRouter>
