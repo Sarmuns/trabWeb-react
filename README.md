@@ -1,6 +1,7 @@
 # Clone do Spotify
 
 Este projeto é clone do Spotify, desenvolvido utilizando React e Bootstrap.
+Em desenvolvimento, aproximadamente 20% feito.
 
 ## Tecnologias Utilizadas
 
@@ -21,11 +22,7 @@ Para executar o projeto, siga as instruções abaixo:
 
 ## Funcionalidades
 
-- Busca de músicas
-- Reprodução de músicas
-- Criação de playlists
-- Adição de músicas às playlists
-- Recomendações personalizadas
+- Visualizar Playlists
 
 ## Integrantes
 
