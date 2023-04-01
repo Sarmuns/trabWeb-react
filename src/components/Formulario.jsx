@@ -43,12 +43,19 @@ const Formulario = () => {
         <div className="form-group justify-content-center">
           <input type="text" className="form-control" id="nome" name="nome" placeholder="Nome" value={nome} onChange={handleNomeChange} /><br />
           <input type="email" className="form-control" id="email" name="email" placeholder="E-mail" value={email} onChange={handleEmailChange} /><br />
-          <input type="password" className="form-control" id="senha" name="senha" placeholder="Senha" value={senha} onChange={handleSenhaChange} /><br />
-          <input type="password" className="form-control" id="confirmarsenha" name="confirmarsenha" placeholder="Confirme sua senha" value={confirmarSenha} onChange={handleConfirmarSenhaChange} /><br />
           {senhaIgualConfirmarSenha ? (
-            <Link to="/home" className="btn btn-success btn-lg my-3">Cadastrar</Link>
+            <>
+              <input type="password" className="form-control" id="senha" name="senha" placeholder="Senha" value={senha} onChange={handleSenhaChange} /><br />
+              <input type="password" className="form-control" id="confirmarsenha" name="confirmarsenha" placeholder="Confirme sua senha" value={confirmarSenha} onChange={handleConfirmarSenhaChange} /><br />
+              <Link to="/home" className="btn btn-success btn-lg my-3">Cadastrar</Link>
+            </>
           ) : (
-            <p className="text-danger">Senha e confirmar senha não estão iguais</p>
+            <>
+              <input type="password" className="form-control is-invalid" id="senha" name="senha" placeholder="Senha" value={senha} onChange={handleSenhaChange} /><br />
+              <input type="password" className="form-control is-invalid" id="confirmarsenha" name="confirmarsenha" placeholder="Confirme sua senha" value={confirmarSenha} onChange={handleConfirmarSenhaChange} />
+              <p className="text-danger d-flex">Senhas não estão iguais</p><br />
+              <div className="btn btn-secondary disabled btn-lg my-3">Cadastrar</div>
+            </>
           )}
         </div>
       </form>
