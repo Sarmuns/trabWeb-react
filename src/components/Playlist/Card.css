@@ -1,4 +1,10 @@
-
+.cardList{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    margin-bottom: 15px;
+    gap: 8px;
+}
 .card {
     width: 10vw;
     border-width: 2px;
