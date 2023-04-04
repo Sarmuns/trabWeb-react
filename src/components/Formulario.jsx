@@ -37,8 +37,8 @@ const Formulario = () => {
   }
 
   return (
-    <div className="container custom-card text-center my-5">
-      <h1>Cadastro</h1>
+    <div className="container custom-card text-center my-3 m-auto w-25">
+      <h1 className="my-4">Cadastro</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group justify-content-center">
           <input type="text" className="form-control" id="nome" name="nome" placeholder="Nome" value={nome} onChange={handleNomeChange} /><br />

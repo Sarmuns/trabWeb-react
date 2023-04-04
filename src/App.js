@@ -10,22 +10,23 @@ import {
   Route,
   BrowserRouter
 } from "react-router-dom";
-import './App.css';
+// import './App.css';
 import Cadastro from "./pages/Cadastro";
 
 function App() {
+  // Como fazer uma rota nao exibiro header e o footer
 
   return (
     <BrowserRouter>
-      <Header />
+      {true ? <Header /> : ''}
       <Routes>
-        <Route path="/" element={<Cadastro className="cadastro"/>} />
-        <Route path="/home" element={<Home className="home"/>} />
-        <Route path="/faq" element={<Faq className="faq"/>} />
-        <Route path="/playlist" element={<Playlist classNqme="playlist"/>} />
+        <Route path="/" element={<Cadastro className="cadastro" />} />
+        <Route path="/home" element={<Home className="home" />} />
+        <Route path="/faq" element={<Faq className="faq" />} />
+        <Route path="/playlist" element={<Playlist classNqme="playlist" />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
+      {true ? <Footer /> : ''}
     </BrowserRouter>
 
   );

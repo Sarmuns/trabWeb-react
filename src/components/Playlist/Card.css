@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     max-width: 80vw;
     margin-bottom: 15px;
-    gap: 8px;
+    gap: 10px;
 }
 .card {
     width: 10vw;
