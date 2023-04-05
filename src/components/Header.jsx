@@ -29,7 +29,7 @@ const Header = () => {
                     <li className="nav-item">
                         <Link
                             className={isHomePage ? 'nav-link active' : 'nav-link'}
-                            to="/home">
+                            to="/">
                             Home
                         </Link>
                     </li>
@@ -43,7 +43,7 @@ const Header = () => {
                     <li className="nav-item">
                         <Link
                             className={isCadastro ? 'nav-link  active' : 'nav-link'}
-                            to="/">
+                            to="/cadastro">
                             Cadastro
                         </Link>
                     </li>

@@ -20,8 +20,8 @@ function App() {
     <BrowserRouter>
       {true ? <Header /> : ''}
       <Routes>
-        <Route path="/" element={<Cadastro className="cadastro" />} />
-        <Route path="/home" element={<Home className="home" />} />
+        <Route path="/" element={<Home className="home" />} />
+        <Route path="/cadastro" element={<Cadastro className="cadastro" />} />
         <Route path="/faq" element={<Faq className="faq" />} />
         <Route path="/playlist" element={<Playlist classNqme="playlist" />} />
         <Route path="*" element={<NotFound />} />
