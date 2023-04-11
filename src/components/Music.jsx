@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 const Music = (props) => {
     const { data } = props;
     const { id } = useParams();
-    return (<>
+    return (
         <table class="table table-dark table-striped mb-0">
             <thead>
                 <tr>
@@ -17,7 +17,7 @@ const Music = (props) => {
             <tbody>
                 {data.playlists[id].musicas.map((musica, i) => (
                     <tr>
-                        <th scope="row">{i+1}</th>
+                        <th scope="row">{i + 1}</th>
                         <td>{musica.nome}</td>
                         <td>{musica.artista}</td>
                         <td>{musica.album}</td>
@@ -26,8 +26,6 @@ const Music = (props) => {
                 ))}
             </tbody>
         </table>
-
-    </>
     )
 }
 
