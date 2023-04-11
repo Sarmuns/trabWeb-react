@@ -39,6 +39,10 @@ const Formulario = () => {
   
   const handleSignUp = () => {
     setUsers([...users, [nome, senha]]);
+    setNome('')
+    setEmail('')
+    setSenha('')
+    setConfirmarSenha('')
     setCadastroEfetuado(true);
   }
   
