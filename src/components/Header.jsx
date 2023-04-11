@@ -15,7 +15,7 @@ const Header = () => {
             <Link
                 className="navbar-brand mx-3"
                 to="/">
-                <img src="./logo.png"
+                <img src="/logo.png"
                     alt="Logo"
                     width="30"
                     height="24"
