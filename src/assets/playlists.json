@@ -3,7 +3,7 @@
   "playlists": [
     {
       "nome": "Rock Alternativo",
-      "id" : 1,
+      "id" : 0,
       "qtdMusicas": 3,
       "fotoPlaylist": "/playlist/rockAlternativo.jpg",
       "musicas": [
@@ -35,7 +35,7 @@
     },
     {
       "nome": "Rock Internacional",
-      "id" : 2,
+      "id" : 1,
       "count": 3,
       "fotoPlaylist": "/playlist/rockInternacional.jpg",
       "musicas": [
@@ -67,7 +67,7 @@
     },
     {
       "nome": "Linkin Park",
-      "id" : 3,
+      "id" : 2,
       "count": 3,
       "fotoPlaylist": "/playlist/linkinPark.jpg",
       "musicas": [
@@ -99,7 +99,7 @@
     },
     {
       "nome": "Para Malhar",
-      "id" : 4,
+      "id" : 3,
       "count": 3,
       "fotoPlaylist": "/playlist/paraMalhar.jpg",
       "musicas": [
@@ -131,7 +131,7 @@
     },
     {
       "nome": "Bossa Nova",
-      "id" : 5,
+      "id" : 4,
       "count": 3,
       "fotoPlaylist": "/playlist/bossaNova.jpg",
       "musicas": [
