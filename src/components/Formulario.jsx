@@ -8,6 +8,7 @@ const Formulario = () => {
   const [confirmarSenha, setConfirmarSenha] = useState('');
   const [senhaIgualConfirmarSenha, setSenhaIgualConfirmarSenha] = useState(true);
   const [users, setUsers] = useState([['Samuel', '123'], ['Julia', '123456']])
+  const [cadastroEfetuado, setCadastroEfetuado] = useState(false);
 
 
   const handleNomeChange = (event) => {
@@ -37,12 +38,20 @@ const Formulario = () => {
   }
   
   const handleSignUp = () => {
-    setUsers([...users, [nome, senha]])
+    setUsers([...users, [nome, senha]]);
+    setCadastroEfetuado(true);
   }
+  
   useEffect(() => {
     console.log(users);
-    }, [users]);
-    
+  }, [users]);
+  
+  useEffect(() => {
+    if (cadastroEfetuado) {
+      alert('Cadastro efetuado!');
+      setCadastroEfetuado(false);
+    }
+  }, [cadastroEfetuado]);
   
   
   return (
