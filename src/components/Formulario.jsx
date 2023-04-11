@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Formulario = () => {
@@ -7,35 +7,44 @@ const Formulario = () => {
   const [senha, setSenha] = useState('');
   const [confirmarSenha, setConfirmarSenha] = useState('');
   const [senhaIgualConfirmarSenha, setSenhaIgualConfirmarSenha] = useState(true);
+  const [users, setUsers] = useState([['Samuel', '123'], ['Julia', '123456']])
+
 
   const handleNomeChange = (event) => {
     setNome(event.target.value);
   }
-
+  
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
   }
-
+  
   const handleSenhaChange = (event) => {
     setSenha(event.target.value);
     setSenhaIgualConfirmarSenha(event.target.value === confirmarSenha);
   }
-
+  
   const handleConfirmarSenhaChange = (event) => {
     setConfirmarSenha(event.target.value);
     setSenhaIgualConfirmarSenha(event.target.value === senha);
   }
-
+  
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    // Checa se senha e confirmarSenha são iguais
     if (senha !== confirmarSenha) {
       setSenhaIgualConfirmarSenha(false);
       return;
     }
   }
-
+  
+  const handleSignUp = () => {
+    setUsers([...users, [nome, senha]])
+  }
+  useEffect(() => {
+    console.log(users);
+    }, [users]);
+    
+  
+  
   return (
     <div className="container custom-card text-center my-3 m-auto w-25">
       <h1 className="my-4">Cadastro</h1>
@@ -47,7 +56,7 @@ const Formulario = () => {
             <>
               <input type="password" className="form-control" id="senha" name="senha" placeholder="Senha" value={senha} onChange={handleSenhaChange} /><br />
               <input type="password" className="form-control" id="confirmarsenha" name="confirmarsenha" placeholder="Confirme sua senha" value={confirmarSenha} onChange={handleConfirmarSenhaChange} /><br />
-              <Link to="/home" className="btn btn-success btn-lg my-3">Cadastrar</Link>
+              <Link className="btn btn-success btn-lg my-3" onClick={handleSignUp}>Cadastrar</Link>
             </>
           ) : (
             <>
