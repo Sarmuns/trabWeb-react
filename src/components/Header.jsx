@@ -9,10 +9,11 @@ const Header = () => {
     let isHomePage = location.pathname === "/";
     let isFaq = location.pathname ==="/faq"
     let isCadastro = location.pathname ==="/cadastro"
-    //A medida que novas páginas forem criadas adicionar o location delas também
+    let hideHeader = false;
+    hideHeader = location.pathname ==="/playlist/:id";
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-success sticky-top">
-
             <Link
                 className="navbar-brand mx-3"
                 to="/">

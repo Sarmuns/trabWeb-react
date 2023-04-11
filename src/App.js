@@ -5,28 +5,30 @@ import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Faq from './pages/Faq';
 import Playlist from "./pages/Playlist";
+import Cadastro from "./pages/Cadastro";
 import {
+  useLocation,
   Routes,
   Route,
   BrowserRouter
 } from "react-router-dom";
 // import './App.css';
-import Cadastro from "./pages/Cadastro";
 
 function App() {
-  // Como fazer uma rota nao exibiro header e o footer
+  const showHeader = ['/', '/cadastro', '/faq', '/playlist'].includes(window.location.pathname);
 
   return (
     <BrowserRouter>
-      {true ? <Header /> : ''}
+      {showHeader ? <Header /> : ''}
       <Routes>
         <Route path="/" element={<Home className="home" />} />
         <Route path="/cadastro" element={<Cadastro className="cadastro" />} />
         <Route path="/faq" element={<Faq className="faq" />} />
         <Route path="/playlist" element={<Playlist classNqme="playlist" />} />
+        <Route path="/playlist/:id" element={<h1>Uepa</h1>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      {true ? <Footer /> : ''}
+      {showHeader ? <Footer /> : ''}
     </BrowserRouter>
 
   );
