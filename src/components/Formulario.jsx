@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Formulario = () => {
   const [nome, setNome] = useState('');
@@ -7,6 +8,7 @@ const Formulario = () => {
   const [confirmarSenha, setConfirmarSenha] = useState('');
   const [senhaIgualConfirmarSenha, setSenhaIgualConfirmarSenha] = useState(true);
   const [users, setUsers] = useState([['Samuel', '123'], ['Julia', '123456']])
+  const [cadastroEfetuado, setCadastroEfetuado] = useState(false);
 
 
   const handleNomeChange = (event) => {
@@ -36,16 +38,20 @@ const Formulario = () => {
   }
   
   const handleSignUp = () => {
-    setUsers([...users, [nome, senha]])
-    setNome('');
-    setSenha('');
-    setEmail('');
-    setConfirmarSenha('');
+    setUsers([...users, [nome, senha]]);
+    setCadastroEfetuado(true);
   }
+  
   useEffect(() => {
     console.log(users);
-    }, [users]);
-    
+  }, [users]);
+  
+  useEffect(() => {
+    if (cadastroEfetuado) {
+      alert('Cadastro efetuado!');
+      setCadastroEfetuado(false);
+    }
+  }, [cadastroEfetuado]);
   
   
   return (
@@ -59,7 +65,7 @@ const Formulario = () => {
             <>
               <input type="password" className="form-control" id="senha" name="senha" placeholder="Senha" value={senha} onChange={handleSenhaChange} /><br />
               <input type="password" className="form-control" id="confirmarsenha" name="confirmarsenha" placeholder="Confirme sua senha" value={confirmarSenha} onChange={handleConfirmarSenhaChange} /><br />
-              <div className="btn btn-success btn-lg my-3" onClick={handleSignUp}>Cadastrar</div>
+              <Link className="btn btn-success btn-lg my-3" onClick={handleSignUp}>Cadastrar</Link>
             </>
           ) : (
             <>
@@ -76,3 +82,4 @@ const Formulario = () => {
 }
 
 export default Formulario;
+
