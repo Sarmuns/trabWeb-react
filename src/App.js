@@ -7,12 +7,10 @@ import Faq from './pages/Faq';
 import Playlist from "./pages/Playlist";
 import Cadastro from "./pages/Cadastro";
 import {
-  useLocation,
   Routes,
   Route,
   BrowserRouter
 } from "react-router-dom";
-// import './App.css';
 
 function App() {
   const showHeader = ['/', '/cadastro', '/faq', '/playlist'].includes(window.location.pathname);

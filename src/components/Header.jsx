@@ -9,8 +9,6 @@ const Header = () => {
     let isHomePage = location.pathname === "/";
     let isFaq = location.pathname ==="/faq"
     let isCadastro = location.pathname ==="/cadastro"
-    let hideHeader = false;
-    hideHeader = location.pathname ==="/playlist/:id";
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-success sticky-top">
