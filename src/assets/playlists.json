@@ -1,10 +1,8 @@
 {
-  "count": 5,
   "playlists": [
     {
       "nome": "Rock Alternativo",
-      "id" : 0,
-      "qtdMusicas": 3,
+      "id": 0,
       "fotoPlaylist": "/playlist/rockAlternativo.jpg",
       "musicas": [
         {
@@ -16,12 +14,28 @@
           "audioFile": "https://example.com/linkin-park-in-the-end.mp3"
         },
         {
+          "nome": "Chop Suey!",
+          "artista": "System of a Down",
+          "album": "Toxicity",
+          "genero": "Rock Alternativo",
+          "fotoAlbum": "https://example.com/toxicity.jpg",
+          "audioFile": "https://example.com/system-of-a-down-chop-suey.mp3"
+        },
+        {
           "nome": "Kryptonite",
           "artista": "3 Doors Down",
           "album": "The Better Life",
           "genero": "Rock Alternativo",
           "fotoAlbum": "https://example.com/the-better-life.jpg",
           "audioFile": "https://example.com/3-doors-down-kryptonite.mp3"
+        },
+        {
+          "nome": "Everlong",
+          "artista": "Foo Fighters",
+          "album": "The Colour and the Shape",
+          "genero": "Rock Alternativo",
+          "fotoAlbum": "https://example.com/the-colour-and-the-shape.jpg",
+          "audioFile": "https://example.com/foo-fighters-everlong.mp3"
         },
         {
           "nome": "Last Resort",
@@ -35,8 +49,7 @@
     },
     {
       "nome": "Rock Internacional",
-      "id" : 1,
-      "count": 3,
+      "id": 1,
       "fotoPlaylist": "/playlist/rockInternacional.jpg",
       "musicas": [
         {
@@ -67,8 +80,7 @@
     },
     {
       "nome": "Linkin Park",
-      "id" : 2,
-      "count": 3,
+      "id": 2,
       "fotoPlaylist": "/playlist/linkinPark.jpg",
       "musicas": [
         {
@@ -78,6 +90,14 @@
           "genero": "Nu Metal",
           "fotoAlbum": "https://example.com/meteora.jpg",
           "audioFile": "https://example.com/linkin-park-numb.mp3"
+        },
+        {
+          "nome": "Papercut",
+          "artista": "Linkin Park",
+          "album": "Hybrid Theory",
+          "genero": "Rock Alternativo",
+          "fotoAlbum": "https://example.com/hybrid-theory.jpg",
+          "audioFile": "https://example.com/linkin-park-papercut.mp3"
         },
         {
           "nome": "Given Up",
@@ -99,8 +119,7 @@
     },
     {
       "nome": "Para Malhar",
-      "id" : 3,
-      "count": 3,
+      "id": 3,
       "fotoPlaylist": "/playlist/paraMalhar.jpg",
       "musicas": [
         {
@@ -131,8 +150,7 @@
     },
     {
       "nome": "Bossa Nova",
-      "id" : 4,
-      "count": 3,
+      "id": 4,
       "fotoPlaylist": "/playlist/bossaNova.jpg",
       "musicas": [
         {
@@ -142,6 +160,14 @@
           "genero": "Bossa Nova",
           "fotoAlbum": "https://example.com/the-composer-of-desafinado-plays.jpg",
           "audioFile": "https://example.com/antonio-carlos-jobim-garota-de-ipanema.mp3"
+        },
+        {
+          "nome": "Desafinado",
+          "artista": "Tom Jobim & Newton Mendonça",
+          "album": "João Gilberto",
+          "genero": "Bossa Nova",
+          "fotoAlbum": "https://example.com/joao-gilberto.jpg",
+          "audioFile": "https://example.com/tom-jobim-newton-mendonca-desafinado.mp3"
         },
         {
           "nome": "Chega de Saudade",
