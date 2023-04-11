@@ -5,7 +5,7 @@ const Music = (props) => {
     const { data } = props;
     const { id } = useParams();
     return (<>
-        <table class="table table-dark mb-0">
+        <table class="table table-dark table-striped mb-0">
             <thead>
                 <tr>
                     <th scope="col">#</th>
