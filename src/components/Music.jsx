@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import AudioPlayer from "./AudioPlayer";
 import { useParams } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
-import NotFound from "../pages/NotFound";
 
 const Music = (props) => {
     const { data } = props;
