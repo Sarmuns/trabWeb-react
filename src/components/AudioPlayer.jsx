@@ -26,11 +26,9 @@ const AudioPlayer = ({ audioPath }) => {
     return (
         <div>
             {isPlaying ? (
-                <>
-                    <FontAwesomeIcon onClick={handlePause} icon={faPause} />
-                </>
+                <FontAwesomeIcon onClick={handlePause} icon={faPause} />
             ) : (
-                <FontAwesomeIcon onClick={() => {stopAudio(); handlePlay()}} icon={faPlay} />
+                <FontAwesomeIcon onClick={() => { stopAudio(); handlePlay() }} icon={faPlay} />
             )}
         </div>
     );
