@@ -17,7 +17,7 @@ const Music = (props) => {
             </thead>
             <tbody>
                 {data.playlists[id].musicas.map((musica, i) => (
-                    <tr>
+                    <tr key={i}>
                         <th scope="row"><AudioPlayer audioPath={musica.audioFile}/></th>
                         <td>{musica.nome}</td>
                         <td>{musica.artista}</td>
