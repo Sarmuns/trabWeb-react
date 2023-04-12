@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons'
 
-const AudioPlayer = ({ audioPath, setAllPlayersToFalse, index, isPlaying }) => {
+const AudioPlayer = ({ audioPath, setAllPlayersToFalse, index, isPlaying, musica }) => {
     const audioRef = useRef(new Audio(audioPath));
     const [isP, setIsP] = useState(true) //controlar a renderização dos icones
 
@@ -26,13 +26,33 @@ const AudioPlayer = ({ audioPath, setAllPlayersToFalse, index, isPlaying }) => {
     }, [isPlaying]);
 
     return (
-        <div>
+        <tr>
             {isPlaying && isP ? (
-                <FontAwesomeIcon onClick={handlePause} icon={faPause} />
+                <>
+                    <td>
+                        <FontAwesomeIcon onClick={handlePause} icon={faPause} />
+                    </td>
+
+                    <td className="text-success">{musica.nome}</td>
+                    <td className="text-success" >{musica.artista}</td>
+                    <td className="text-success">{musica.album}</td>
+                </>
+
             ) : (
-                <FontAwesomeIcon onClick={handlePlay} icon={faPlay} />
+                <>
+                    <td>
+                        <FontAwesomeIcon onClick={handlePlay} icon={faPlay} />
+                    </td>
+
+                    <td>{musica.nome}</td>
+                    <td>{musica.artista}</td>
+                    <td>{musica.album}</td>
+                </>
             )}
-        </div>
+
+
+        </tr>
+
     );
 };
 

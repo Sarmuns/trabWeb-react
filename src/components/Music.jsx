@@ -20,7 +20,7 @@ const Music = (props) => {
             <table className="table table-dark table-striped mb-0">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
+                        <th scope="col"></th>
                         <th scope="col">Nome</th>
                         <th scope="col">Artista</th>
                         <th scope="col">Album</th>
@@ -28,19 +28,14 @@ const Music = (props) => {
                 </thead>
                 <tbody>
                     {data.playlists[id].musicas.map((musica, i) => (
-                        <tr key={i}>
-                            <th scope="row">
-                                <AudioPlayer
-                                    audioPath={musica.audioFile}
-                                    setAllPlayersToFalse={setAllPlayersToFalse}
-                                    index={i}
-                                    isPlaying={playersState[i]}
-                                />
-                            </th>
-                            <td>{musica.nome}</td>
-                            <td>{musica.artista}</td>
-                            <td>{musica.album}</td>
-                        </tr>
+                        <AudioPlayer
+                            key={i}
+                            audioPath={musica.audioFile}
+                            musica={musica}
+                            setAllPlayersToFalse={setAllPlayersToFalse}
+                            index={i}
+                            isPlaying={playersState[i]}
+                        />
 
                     ))}
                 </tbody>
