@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import AudioPlayer from "./AudioPlayer";
 import { useParams } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+import NotFound from "../pages/NotFound";
 
 const Music = (props) => {
     const { data } = props;
     const { id } = useParams();
     if (data.playlists[id] == null) {
-        return (<div>stop</div>)
+        return (
+            <Navigate to="/error404" />
+        )
+
     } else {
         const [playersState, setPlayersState] = useState(Array(data.playlists[id].musicas.length).fill(false));
 
