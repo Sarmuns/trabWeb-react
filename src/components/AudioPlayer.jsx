@@ -28,27 +28,19 @@ const AudioPlayer = ({ audioPath, setAllPlayersToFalse, index, isPlaying, musica
     return (
         <tr>
             {isPlaying && isP ? (
-                <>
-                    <td>
-                        <FontAwesomeIcon onClick={handlePause} icon={faPause} />
-                    </td>
-
-                    <td className="text-success">{musica.nome}</td>
-                    <td className="text-success" >{musica.artista}</td>
-                    <td className="text-success">{musica.album}</td>
-                </>
+                <td>
+                    <FontAwesomeIcon onClick={handlePause} icon={faPause} />
+                </td>
 
             ) : (
-                <>
-                    <td>
-                        <FontAwesomeIcon onClick={handlePlay} icon={faPlay} />
-                    </td>
-
-                    <td>{musica.nome}</td>
-                    <td>{musica.artista}</td>
-                    <td>{musica.album}</td>
-                </>
+                <td>
+                    <FontAwesomeIcon onClick={handlePlay} icon={faPlay} />
+                </td>
             )}
+
+            <td className={isPlaying && isP ? "text-success" : ""}>{musica.nome}</td>
+            <td className={isPlaying && isP ? "text-success" : ""}>{musica.artista}</td>
+            <td className={isPlaying && isP ? "text-success" : ""}>{musica.album}</td>
 
 
         </tr>
