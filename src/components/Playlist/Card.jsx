@@ -12,7 +12,7 @@ const Card = (props) => {
                 className='text-light mb-5 m-auto'
             >Para geral curtir de graça!</h1>
             <div className='cardList d-flex m-auto mb-5'>
-                {data.playlists.map(playlist => (
+                {data.map(playlist => (
                     <Link
                         className='mb-5'
                         to={`/playlist/${playlist.id}`}
