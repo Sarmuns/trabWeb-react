@@ -191,7 +191,7 @@
   "accounts": [
     {
       "id": 1,
-      "username": "Jteens",
+      "username": "Julia Teens",
       "email": "Jteens@example.com",
       "password": "jateens123",
       "playlistsID": [
@@ -201,7 +201,7 @@
     },
     {
       "id": 2,
-      "username": "SoutoPacheco",
+      "username": "Souto Pacheco",
       "email": "maiorPacheco@example.com",
       "password": "123",
       "playlistsID": [
