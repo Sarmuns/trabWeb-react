@@ -7,6 +7,7 @@ import Faq from './pages/Faq';
 import Playlist from "./pages/Playlist";
 import PlaylistMusics from "./pages/PlaylistMusics";
 import Cadastro from "./pages/Cadastro";
+import Login from "./pages/Login";
 import {
   Routes,
   Route,
@@ -34,6 +35,10 @@ function App() {
         <Route
           path="/cadastro"
           element={<Layout><Cadastro className="cadastro" /></Layout>}
+        />
+        <Route
+          path="/login"
+          element={<Layout><Login className="login" /></Layout>}
         />
         <Route
           path="/faq"

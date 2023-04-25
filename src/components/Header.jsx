@@ -8,7 +8,7 @@ const Header = () => {
     const location = useLocation();
     let isHomePage = location.pathname === "/";
     let isFaq = location.pathname ==="/faq"
-    let isCadastro = location.pathname ==="/cadastro"
+    let isLogin = location.pathname ==="/login"
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-success sticky-top">
@@ -41,9 +41,9 @@ const Header = () => {
                     </li>
                     <li className="nav-item">
                         <Link
-                            className={isCadastro ? 'nav-link  active' : 'nav-link'}
-                            to="/cadastro">
-                            Cadastro
+                            className={isLogin ? 'nav-link  active' : 'nav-link'}
+                            to="/login">
+                            Login
                         </Link>
                     </li>
                 </ul>
