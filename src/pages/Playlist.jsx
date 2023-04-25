@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import SearchBar from "../components/Playlist/SearchBar";
 import Card from "../components/Playlist/Card";
 import axios from "axios";
-// import data from "../assets/playlists.json";
 
 const Playlist = () => {
   const [data, setData] = useState([]);

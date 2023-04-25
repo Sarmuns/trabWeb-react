@@ -16,7 +16,7 @@
         {
           "nome": "Chop Suey!",
           "artista": "System of a Down",
-          "album": "Toxicity",  
+          "album": "Toxicity",
           "genero": "Rock Alternativo",
           "fotoAlbum": "https://example.com/toxicity.jpg",
           "audioFile": "/music/SOAD_ChopSuey.mp3"
@@ -185,6 +185,28 @@
           "fotoAlbum": "https://example.com/wave.jpg",
           "audioFile": "https://example.com/antonio-carlos-jobim-wave.mp3"
         }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "username": "Jteens",
+      "email": "Jteens@example.com",
+      "password": "jateens123",
+      "playlistsID": [
+        "0",
+        "2"
+      ]
+    },
+    {
+      "id": 2,
+      "username": "SoutoPacheco",
+      "email": "maiorPacheco@example.com",
+      "password": "123",
+      "playlistsID": [
+        "3",
+        "1"
       ]
     }
   ]
