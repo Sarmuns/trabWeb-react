@@ -191,9 +191,9 @@
   "accounts": [
     {
       "id": 1,
-      "username": "Julia Teens",
-      "email": "Jteens@example.com",
-      "password": "jateens123",
+      "username": "ADMIN",
+      "email": "admin",
+      "password": "password",
       "playlistsID": [
         "0",
         "2"
@@ -202,33 +202,12 @@
     {
       "id": 2,
       "username": "Souto Pacheco",
-      "email": "maiorPacheco@example.com",
+      "email": "a",
       "password": "123",
       "playlistsID": [
         "3",
         "1"
       ]
-    },
-    {
-      "username": "Julia,",
-      "email": "a",
-      "password": "b",
-      "playlistsID": null,
-      "id": 3
-    },
-    {
-      "username": "fasha",
-      "email": "fasha",
-      "password": "123",
-      "playlistsID": null,
-      "id": 4
-    },
-    {
-      "username": "balenciaga",
-      "email": "balenciaga",
-      "password": "balenciaga",
-      "playlistsID": null,
-      "id": 5
     }
   ]
 }

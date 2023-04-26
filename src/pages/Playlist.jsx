@@ -20,10 +20,6 @@ const Playlist = () => {
       });
   }, []);
 
-  const handleClick = () => {
-    console.log(data)
-    }
-
   return (
     <div className="bg bg-dark d-flex flex-column">
       <SearchBar />

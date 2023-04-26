@@ -23,7 +23,9 @@ const AudioPlayer = ({ audioPath, setAllPlayersToFalse, index, isPlaying, musica
         } else {
             handlePause();
         }
+        /* eslint-disable-next-line */
     }, [isPlaying]);
+
 
     return (
         <tr>
