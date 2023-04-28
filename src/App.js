@@ -42,7 +42,7 @@ function App() {
           element={<Layout><Login className="login" /></Layout>}
         />
         <Route
-          path="/profile"
+          path="/dashboard"
           element={<Layout><UserHome className="userHome" /></Layout>}
         />
         <Route

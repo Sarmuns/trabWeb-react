@@ -49,7 +49,7 @@ const Formulario = () => {
     axios.post(apiUrl, newAccount)
       .then(response => {
         console.log(response);
-        navigate('/');
+        navigate('/login');
       })
       .catch(error => {
         console.error(error);
@@ -68,7 +68,7 @@ const Formulario = () => {
         <form onSubmit={handleSubmit}>
           <div className="form-group justify-content-center">
             <h2>Cadastro</h2>
-            <input type="text" className="form-control" id="nome" name="nome" placeholder="Nome" value={nome} onChange={handleNomeChange} /><br />
+            <input type="text" className="form-control" id="nome" name="nome" placeholder="Username" value={nome} onChange={handleNomeChange} /><br />
             <input type="email" className="form-control" id="email" name="email" placeholder="E-mail" value={email} onChange={handleEmailChange} /><br />
             {senhaIgualConfirmarSenha ? (
               <>

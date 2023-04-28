@@ -1,189 +1,189 @@
 {
   "playlists": [
     {
-      "nome": "Rock Alternativo",
+      "nome": "rock alternativo",
       "id": 0,
-      "fotoPlaylist": "/playlist/rockAlternativo.jpg",
+      "fotoplaylist": "/playlist/rockalternativo.jpg",
       "musicas": [
         {
-          "nome": "Given Up",
-          "artista": "Linkin Park",
-          "album": "Hybrid Theory",
-          "genero": "Rock Alternativo",
-          "fotoAlbum": "https://example.com/hybrid-theory.jpg",
-          "audioFile": "/music/LinkinPark_GivenUp.mp3"
+          "nome": "given up",
+          "artista": "linkin park",
+          "album": "hybrid theory",
+          "genero": "rock alternativo",
+          "fotoalbum": "https://example.com/hybrid-theory.jpg",
+          "audiofile": "/music/linkinpark_givenup.mp3"
         },
         {
-          "nome": "Chop Suey!",
-          "artista": "System of a Down",
-          "album": "Toxicity",
-          "genero": "Rock Alternativo",
-          "fotoAlbum": "https://example.com/toxicity.jpg",
-          "audioFile": "/music/SOAD_ChopSuey.mp3"
+          "nome": "chop suey!",
+          "artista": "system of a down",
+          "album": "toxicity",
+          "genero": "rock alternativo",
+          "fotoalbum": "https://example.com/toxicity.jpg",
+          "audiofile": "/music/soad_chopsuey.mp3"
         },
         {
-          "nome": "Kryptonite",
-          "artista": "3 Doors Down",
-          "album": "The Better Life",
-          "genero": "Rock Alternativo",
-          "fotoAlbum": "https://example.com/the-better-life.jpg",
-          "audioFile": "https://example.com/3-doors-down-kryptonite.mp3"
+          "nome": "kryptonite",
+          "artista": "3 doors down",
+          "album": "the better life",
+          "genero": "rock alternativo",
+          "fotoalbum": "https://example.com/the-better-life.jpg",
+          "audiofile": "https://example.com/3-doors-down-kryptonite.mp3"
         },
         {
-          "nome": "Everlong",
-          "artista": "Foo Fighters",
-          "album": "The Colour and the Shape",
-          "genero": "Rock Alternativo",
-          "fotoAlbum": "https://example.com/the-colour-and-the-shape.jpg",
-          "audioFile": "https://example.com/foo-fighters-everlong.mp3"
+          "nome": "everlong",
+          "artista": "foo fighters",
+          "album": "the colour and the shape",
+          "genero": "rock alternativo",
+          "fotoalbum": "https://example.com/the-colour-and-the-shape.jpg",
+          "audiofile": "https://example.com/foo-fighters-everlong.mp3"
         },
         {
-          "nome": "Last Resort",
-          "artista": "Papa Roach",
-          "album": "Infest",
-          "genero": "Rock Alternativo",
-          "fotoAlbum": "https://example.com/infest.jpg",
-          "audioFile": "https://example.com/papa-roach-last-resort.mp3"
+          "nome": "last resort",
+          "artista": "papa roach",
+          "album": "infest",
+          "genero": "rock alternativo",
+          "fotoalbum": "https://example.com/infest.jpg",
+          "audiofile": "https://example.com/papa-roach-last-resort.mp3"
         }
       ]
     },
     {
-      "nome": "Rock Internacional",
+      "nome": "rock internacional",
       "id": 1,
-      "fotoPlaylist": "/playlist/rockInternacional.jpg",
+      "fotoplaylist": "/playlist/rockinternacional.jpg",
       "musicas": [
         {
-          "nome": "Sweet Child O' Mine",
-          "artista": "Guns N' Roses",
-          "album": "Appetite for Destruction",
-          "genero": "Rock Internacional",
-          "fotoAlbum": "https://example.com/appetite-for-destruction.jpg",
-          "audioFile": "https://example.com/guns-n-roses-sweet-child-o-mine.mp3"
+          "nome": "sweet child o' mine",
+          "artista": "guns n' roses",
+          "album": "appetite for destruction",
+          "genero": "rock internacional",
+          "fotoalbum": "https://example.com/appetite-for-destruction.jpg",
+          "audiofile": "https://example.com/guns-n-roses-sweet-child-o-mine.mp3"
         },
         {
-          "nome": "Livin' on a Prayer",
-          "artista": "Bon Jovi",
-          "album": "Slippery When Wet",
-          "genero": "Rock Internacional",
-          "fotoAlbum": "https://example.com/slippery-when-wet.jpg",
-          "audioFile": "https://example.com/bon-jovi-livin-on-a-prayer.mp3"
+          "nome": "livin' on a prayer",
+          "artista": "bon jovi",
+          "album": "slippery when wet",
+          "genero": "rock internacional",
+          "fotoalbum": "https://example.com/slippery-when-wet.jpg",
+          "audiofile": "https://example.com/bon-jovi-livin-on-a-prayer.mp3"
         },
         {
-          "nome": "Stairway to Heaven",
-          "artista": "Led Zeppelin",
-          "album": "Led Zeppelin IV",
-          "genero": "Rock Internacional",
-          "fotoAlbum": "https://example.com/led-zeppelin-iv.jpg",
-          "audioFile": "https://example.com/led-zeppelin-stairway-to-heaven.mp3"
+          "nome": "stairway to heaven",
+          "artista": "led zeppelin",
+          "album": "led zeppelin iv",
+          "genero": "rock internacional",
+          "fotoalbum": "https://example.com/led-zeppelin-iv.jpg",
+          "audiofile": "https://example.com/led-zeppelin-stairway-to-heaven.mp3"
         }
       ]
     },
     {
-      "nome": "Linkin Park",
+      "nome": "linkin park",
       "id": 2,
-      "fotoPlaylist": "/playlist/linkinPark.jpg",
+      "fotoplaylist": "/playlist/linkinpark.jpg",
       "musicas": [
         {
-          "nome": "Numb",
-          "artista": "Linkin Park",
-          "album": "Meteora",
-          "genero": "Nu Metal",
-          "fotoAlbum": "https://example.com/meteora.jpg",
-          "audioFile": "https://example.com/linkin-park-numb.mp3"
+          "nome": "numb",
+          "artista": "linkin park",
+          "album": "meteora",
+          "genero": "nu metal",
+          "fotoalbum": "https://example.com/meteora.jpg",
+          "audiofile": "https://example.com/linkin-park-numb.mp3"
         },
         {
-          "nome": "Papercut",
-          "artista": "Linkin Park",
-          "album": "Hybrid Theory",
-          "genero": "Rock Alternativo",
-          "fotoAlbum": "https://example.com/hybrid-theory.jpg",
-          "audioFile": "https://example.com/linkin-park-papercut.mp3"
+          "nome": "papercut",
+          "artista": "linkin park",
+          "album": "hybrid theory",
+          "genero": "rock alternativo",
+          "fotoalbum": "https://example.com/hybrid-theory.jpg",
+          "audiofile": "https://example.com/linkin-park-papercut.mp3"
         },
         {
-          "nome": "Given Up",
-          "artista": "Linkin Park",
-          "album": "Hybrid Theory",
-          "genero": "Nu Metal",
-          "fotoAlbum": "https://example.com/hybrid-theory.jpg",
-          "audioFile": "https://example.com/linkin-park-crawling.mp3"
+          "nome": "given up",
+          "artista": "linkin park",
+          "album": "hybrid theory",
+          "genero": "nu metal",
+          "fotoalbum": "https://example.com/hybrid-theory.jpg",
+          "audiofile": "https://example.com/linkin-park-crawling.mp3"
         },
         {
-          "nome": "Breaking the Habit",
-          "artista": "Linkin Park",
-          "album": "Meteora",
-          "genero": "Nu Metal",
-          "fotoAlbum": "https://example.com/meteora.jpg",
-          "audioFile": "https://example.com/linkin-park-breaking-the-habit.mp3"
+          "nome": "breaking the habit",
+          "artista": "linkin park",
+          "album": "meteora",
+          "genero": "nu metal",
+          "fotoalbum": "https://example.com/meteora.jpg",
+          "audiofile": "https://example.com/linkin-park-breaking-the-habit.mp3"
         }
       ]
     },
     {
-      "nome": "Para Malhar",
+      "nome": "para malhar",
       "id": 3,
-      "fotoPlaylist": "/playlist/paraMalhar.jpg",
+      "fotoplaylist": "/playlist/paramalhar.jpg",
       "musicas": [
         {
-          "nome": "Can't Hold Us",
-          "artista": "Macklemore & Ryan Lewis feat. Ray Dalton",
-          "album": "The Heist",
-          "genero": "Hip Hop",
-          "fotoAlbum": "https://example.com/the-heist.jpg",
-          "audioFile": "https://example.com/macklemore-ryan-lewis-cant-hold-us.mp3"
+          "nome": "can't hold us",
+          "artista": "macklemore & ryan lewis feat. ray dalton",
+          "album": "the heist",
+          "genero": "hip hop",
+          "fotoalbum": "https://example.com/the-heist.jpg",
+          "audiofile": "https://example.com/macklemore-ryan-lewis-cant-hold-us.mp3"
         },
         {
-          "nome": "Lose Yourself",
-          "artista": "Eminem",
-          "album": "8 Mile Soundtrack",
-          "genero": "Hip Hop",
-          "fotoAlbum": "https://example.com/8-mile-soundtrack.jpg",
-          "audioFile": "https://example.com/eminem-lose-yourself.mp3"
+          "nome": "lose yourself",
+          "artista": "eminem",
+          "album": "8 mile soundtrack",
+          "genero": "hip hop",
+          "fotoalbum": "https://example.com/8-mile-soundtrack.jpg",
+          "audiofile": "https://example.com/eminem-lose-yourself.mp3"
         },
         {
-          "nome": "Eye of the Tiger",
-          "artista": "Survivor",
-          "album": "Eye of the Tiger",
-          "genero": "Rock",
-          "fotoAlbum": "https://example.com/eye-of-the-tiger.jpg",
-          "audioFile": "https://example.com/survivor-eye-of-the-tiger.mp3"
+          "nome": "eye of the tiger",
+          "artista": "survivor",
+          "album": "eye of the tiger",
+          "genero": "rock",
+          "fotoalbum": "https://example.com/eye-of-the-tiger.jpg",
+          "audiofile": "https://example.com/survivor-eye-of-the-tiger.mp3"
         }
       ]
     },
     {
-      "nome": "Bossa Nova",
+      "nome": "bossa nova",
       "id": 4,
-      "fotoPlaylist": "/playlist/bossaNova.jpg",
+      "fotoplaylist": "/playlist/bossanova.jpg",
       "musicas": [
         {
-          "nome": "Garota de Ipanema",
-          "artista": "Antônio Carlos Jobim",
-          "album": "The Composer of Desafinado, Plays",
-          "genero": "Bossa Nova",
-          "fotoAlbum": "https://example.com/the-composer-of-desafinado-plays.jpg",
-          "audioFile": "https://example.com/antonio-carlos-jobim-garota-de-ipanema.mp3"
+          "nome": "garota de ipanema",
+          "artista": "antônio carlos jobim",
+          "album": "the composer of desafinado, plays",
+          "genero": "bossa nova",
+          "fotoalbum": "https://example.com/the-composer-of-desafinado-plays.jpg",
+          "audiofile": "https://example.com/antonio-carlos-jobim-garota-de-ipanema.mp3"
         },
         {
-          "nome": "Desafinado",
-          "artista": "Tom Jobim & Newton Mendonça",
-          "album": "João Gilberto",
-          "genero": "Bossa Nova",
-          "fotoAlbum": "https://example.com/joao-gilberto.jpg",
-          "audioFile": "https://example.com/tom-jobim-newton-mendonca-desafinado.mp3"
+          "nome": "desafinado",
+          "artista": "tom jobim & newton mendonça",
+          "album": "joão gilberto",
+          "genero": "bossa nova",
+          "fotoalbum": "https://example.com/joao-gilberto.jpg",
+          "audiofile": "https://example.com/tom-jobim-newton-mendonca-desafinado.mp3"
         },
         {
-          "nome": "Chega de Saudade",
-          "artista": "João Gilberto",
-          "album": "Chega de Saudade",
-          "genero": "Bossa Nova",
-          "fotoAlbum": "https://example.com/chega-de-saudade.jpg",
-          "audioFile": "https://example.com/joao-gilberto-chega-de-saudade.mp3"
+          "nome": "chega de saudade",
+          "artista": "joão gilberto",
+          "album": "chega de saudade",
+          "genero": "bossa nova",
+          "fotoalbum": "https://example.com/chega-de-saudade.jpg",
+          "audiofile": "https://example.com/joao-gilberto-chega-de-saudade.mp3"
         },
         {
-          "nome": "Wave",
-          "artista": "Antônio Carlos Jobim",
-          "album": "Wave",
-          "genero": "Bossa Nova",
-          "fotoAlbum": "https://example.com/wave.jpg",
-          "audioFile": "https://example.com/antonio-carlos-jobim-wave.mp3"
+          "nome": "wave",
+          "artista": "antônio carlos jobim",
+          "album": "wave",
+          "genero": "bossa nova",
+          "fotoalbum": "https://example.com/wave.jpg",
+          "audiofile": "https://example.com/antonio-carlos-jobim-wave.mp3"
         }
       ]
     }
@@ -191,20 +191,20 @@
   "accounts": [
     {
       "id": 1,
-      "username": "ADMIN",
+      "username": "admin",
       "email": "admin",
-      "password": "password",
-      "playlistsID": [
+      "password": "123",
+      "playlistsid": [
         "0",
         "2"
       ]
     },
     {
       "id": 2,
-      "username": "Souto Pacheco",
+      "username": "souto pacheco",
       "email": "a",
       "password": "123",
-      "playlistsID": [
+      "playlistsid": [
         "3",
         "1"
       ]
@@ -213,153 +213,166 @@
       "username": "abc",
       "email": "abc",
       "password": "abc",
-      "playlistsID": null,
+      "playlistsid": null,
       "id": 3
     },
     {
       "username": "rob",
       "email": "rob",
       "password": "rob123",
-      "playlistsID": null,
+      "playlistsid": null,
       "id": 4
+    },
+    {
+      "username": "fil",
+      "email": "fil",
+      "password": "123",
+      "playlistsID": null,
+      "id": 5
+    },
+    {
+      "username": "a",
+      "email": "a",
+      "password": "a",
+      "playlistsID": null,
+      "id": 6
     }
   ],
   "musics": [
     {
       "id": "1",
-      "nome": "Eye of the Tiger",
-      "artista": "Survivor",
-      "imgPath": "images/Eye of the Tiger"
+      "nome": "eye of the tiger",
+      "artista": "survivor",
+      "imgpath": "images/eye of the tiger"
     },
     {
       "id": "2",
-      "nome": "Sweet Child O' Mine",
-      "artista": "Guns N' Roses",
-      "imgPath": "images/Sweet Child O' Mine"
+      "nome": "sweet child o' mine",
+      "artista": "guns n' roses",
+      "imgpath": "images/sweet child o' mine"
     },
     {
       "id": "3",
-      "nome": "Billie Jean",
-      "artista": "Michael Jackson",
-      "imgPath": "images/Billie Jean"
+      "nome": "billie jean",
+      "artista": "michael jackson",
+      "imgpath": "images/billie jean"
     },
     {
       "id": "4",
-      "nome": "Bohemian Rhapsody",
-      "artista": "Queen",
-      "imgPath": "images/Bohemian Rhapsody"
+      "nome": "bohemian rhapsody",
+      "artista": "queen",
+      "imgpath": "images/bohemian rhapsody"
     },
     {
       "id": "5",
-      "nome": "Hotel California",
-      "artista": "Eagles",
-      "imgPath": "images/Hotel California"
+      "nome": "hotel california",
+      "artista": "eagles",
+      "imgpath": "images/hotel california"
     },
     {
       "id": "6",
-      "nome": "Back in Black",
-      "artista": "AC/DC",
-      "imgPath": "images/Back in Black"
+      "nome": "back in black",
+      "artista": "ac/dc",
+      "imgpath": "images/back in black"
     },
     {
       "id": "7",
-      "nome": "Smells Like Teen Spirit",
-      "artista": "Nirvana",
-      "imgPath": "images/Smells Like Teen Spirit"
+      "nome": "smells like teen spirit",
+      "artista": "nirvana",
+      "imgpath": "images/smells like teen spirit"
     },
     {
       "id": "8",
-      "nome": "Stairway to Heaven",
-      "artista": "Led Zeppelin",
-      "imgPath": "images/Stairway to Heaven"
+      "nome": "stairway to heaven",
+      "artista": "led zeppelin",
+      "imgpath": "images/stairway to heaven"
     },
     {
       "id": "9",
-      "nome": "Imagine",
-      "artista": "John Lennon",
-      "imgPath": "images/Imagine"
+      "nome": "imagine",
+      "artista": "john lennon",
+      "imgpath": "images/imagine"
     },
     {
       "id": "10",
-      "nome": "Thunderstruck",
-      "artista": "AC/DC",
-      "imgPath": "images/Thunderstruck"
+      "nome": "thunderstruck",
+      "artista": "ac/dc",
+      "imgpath": "images/thunderstruck"
     },
     {
       "id": "11",
-      "nome": "Another Brick in the Wall",
-      "artista": "Pink Floyd",
-      "imgPath": "images/Another Brick in the Wall"
+      "nome": "another brick in the wall",
+      "artista": "pink floyd",
+      "imgpath": "images/another brick in the wall"
     },
     {
       "id": "12",
-      "nome": "Livin' on a Prayer",
-      "artista": "Bon Jovi",
-      "imgPath": "images/Livin' on a Prayer"
+      "nome": "livin' on a prayer",
+      "artista": "bon jovi",
+      "imgpath": "images/livin' on a prayer"
     },
     {
       "id": "13",
-      "nome": "November Rain",
-      "artista": "Guns N' Roses",
-      "imgPath": "images/November Rain"
+      "nome": "november rain",
+      "artista": "guns n' roses",
+      "imgpath": "images/november rain"
     },
     {
       "id": "14",
-      "nome": "Don't Stop Believin'",
-      "artista": "Journey",
-      "imgPath": "images/Don't Stop Believin'"
+      "nome": "don't stop believin'",
+      "artista": "journey",
+      "imgpath": "images/don't stop believin'"
     },
     {
       "id": "15",
-      "nome": "Purple Rain",
-      "artista": "Prince",
-      "imgPath": "images/Purple Rain"
+      "nome": "purple rain",
+      "artista": "prince",
+      "imgpath": "images/purple rain"
     },
     {
       "id": "16",
-      "nome": "Kashmir",
-      "artista": "Led Zeppelin",
-      "imgPath": "images/Kashmir"
+      "nome": "kashmir",
+      "artista": "led zeppelin",
+      "imgpath": "images/kashmir"
     },
     {
       "id": "17",
-      "nome": "My Heart Will Go On",
-      "artista": "Celine Dion",
-      "imgPath": "images/My Heart Will Go On"
+      "nome": "my heart will go on",
+      "artista": "celine dion",
+      "imgpath": "images/my heart will go on"
     },
     {
       "id": "18",
-      "nome": "Like a Rolling Stone",
-      "artista": "Bob Dylan",
-      "imgPath": "images/Like a Rolling Stone"
+      "nome": "like a rolling stone",
+      "artista": "bob dylan",
+      "imgpath": "images/like a rolling stone"
     },
     {
       "id": "19",
-      "nome": "The Sound of Silence",
-      "artista": "Simon & Garfunkel",
-      "imgPath": "images/The Sound of Silence"
+      "nome": "the sound of silence",
+      "artista": "simon & garfunkel",
+      "imgpath": "images/the sound of silence"
     },
     {
       "id": "20",
-      "nome": "Paint It Black",
-      "artista": "The Rolling Stones",
-      "imgPath": "images/Paint It Black"
+      "nome": "paint it black",
+      "artista": "the rolling stones",
+      "imgpath": "images/paint it black"
     }
   ],
-  "userPlaylists" : [
+  "userplaylists": [
     {
-      "id" : 1,
-      "userID" : 1,
-      "nome" : "minha playlist 1",
-      "musics" : [
+      "id": 1,
+      "userid": 1,
+      "nome": "minha playlist 1",
+      "musics": [
         {
           "id": "1",
-          "nome": "Eye of the Tiger",
-          "artista": "Survivor",
-          "imgPath": "images/Eye of the Tiger"
+          "nome": "eye of the tiger",
+          "artista": "survivor",
+          "imgpath": "images/eye of the tiger"
         }
       ]
     }
   ]
-  
 }

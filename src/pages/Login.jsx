@@ -22,7 +22,8 @@ const Login = () => {
             .then((response) => {
                 console.log(response.data)
                 if (response.data.length > 0) {
-                    navigate('/profile')
+                    localStorage.setItem('user', JSON.stringify(response.data[0]))
+                    navigate('/dashboard')
                 } else {
                     alert("E-mail ou senha incorretos!")
                 }
