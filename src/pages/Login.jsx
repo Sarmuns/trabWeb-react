@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Login = () => {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
+    const navigate = useNavigate();
 
     const handleLogin = () => {
 
@@ -21,7 +22,7 @@ const Login = () => {
             .then((response) => {
                 console.log(response.data)
                 if (response.data.length > 0) {
-                    alert("Login realizado com sucesso!")
+                    navigate('/profile')
                 } else {
                     alert("E-mail ou senha incorretos!")
                 }

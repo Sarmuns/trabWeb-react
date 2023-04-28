@@ -208,6 +208,20 @@
         "3",
         "1"
       ]
+    },
+    {
+      "username": "sarmuns",
+      "email": "sarmuns@sarmuns",
+      "password": "sarmuns",
+      "playlistsID": null,
+      "id": 3
+    },
+    {
+      "username": "olasdnfoasnd",
+      "email": "testegut@@",
+      "password": "123",
+      "playlistsID": null,
+      "id": 4
     }
   ]
 }

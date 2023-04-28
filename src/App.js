@@ -42,6 +42,10 @@ function App() {
           element={<Layout><Login className="login" /></Layout>}
         />
         <Route
+          path="/profile"
+          element={<Layout><UserHome className="userHome" /></Layout>}
+        />
+        <Route
           path="/faq"
           element={<Layout><Faq className="faq" /></Layout>}
         />
