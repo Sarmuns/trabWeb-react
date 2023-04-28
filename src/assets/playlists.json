@@ -210,18 +210,156 @@
       ]
     },
     {
-      "username": "sarmuns",
-      "email": "sarmuns@sarmuns",
-      "password": "sarmuns",
+      "username": "abc",
+      "email": "abc",
+      "password": "abc",
       "playlistsID": null,
       "id": 3
     },
     {
-      "username": "olasdnfoasnd",
-      "email": "testegut@@",
-      "password": "123",
+      "username": "rob",
+      "email": "rob",
+      "password": "rob123",
       "playlistsID": null,
       "id": 4
     }
+  ],
+  "musics": [
+    {
+      "id": "1",
+      "nome": "Eye of the Tiger",
+      "artista": "Survivor",
+      "imgPath": "images/Eye of the Tiger"
+    },
+    {
+      "id": "2",
+      "nome": "Sweet Child O' Mine",
+      "artista": "Guns N' Roses",
+      "imgPath": "images/Sweet Child O' Mine"
+    },
+    {
+      "id": "3",
+      "nome": "Billie Jean",
+      "artista": "Michael Jackson",
+      "imgPath": "images/Billie Jean"
+    },
+    {
+      "id": "4",
+      "nome": "Bohemian Rhapsody",
+      "artista": "Queen",
+      "imgPath": "images/Bohemian Rhapsody"
+    },
+    {
+      "id": "5",
+      "nome": "Hotel California",
+      "artista": "Eagles",
+      "imgPath": "images/Hotel California"
+    },
+    {
+      "id": "6",
+      "nome": "Back in Black",
+      "artista": "AC/DC",
+      "imgPath": "images/Back in Black"
+    },
+    {
+      "id": "7",
+      "nome": "Smells Like Teen Spirit",
+      "artista": "Nirvana",
+      "imgPath": "images/Smells Like Teen Spirit"
+    },
+    {
+      "id": "8",
+      "nome": "Stairway to Heaven",
+      "artista": "Led Zeppelin",
+      "imgPath": "images/Stairway to Heaven"
+    },
+    {
+      "id": "9",
+      "nome": "Imagine",
+      "artista": "John Lennon",
+      "imgPath": "images/Imagine"
+    },
+    {
+      "id": "10",
+      "nome": "Thunderstruck",
+      "artista": "AC/DC",
+      "imgPath": "images/Thunderstruck"
+    },
+    {
+      "id": "11",
+      "nome": "Another Brick in the Wall",
+      "artista": "Pink Floyd",
+      "imgPath": "images/Another Brick in the Wall"
+    },
+    {
+      "id": "12",
+      "nome": "Livin' on a Prayer",
+      "artista": "Bon Jovi",
+      "imgPath": "images/Livin' on a Prayer"
+    },
+    {
+      "id": "13",
+      "nome": "November Rain",
+      "artista": "Guns N' Roses",
+      "imgPath": "images/November Rain"
+    },
+    {
+      "id": "14",
+      "nome": "Don't Stop Believin'",
+      "artista": "Journey",
+      "imgPath": "images/Don't Stop Believin'"
+    },
+    {
+      "id": "15",
+      "nome": "Purple Rain",
+      "artista": "Prince",
+      "imgPath": "images/Purple Rain"
+    },
+    {
+      "id": "16",
+      "nome": "Kashmir",
+      "artista": "Led Zeppelin",
+      "imgPath": "images/Kashmir"
+    },
+    {
+      "id": "17",
+      "nome": "My Heart Will Go On",
+      "artista": "Celine Dion",
+      "imgPath": "images/My Heart Will Go On"
+    },
+    {
+      "id": "18",
+      "nome": "Like a Rolling Stone",
+      "artista": "Bob Dylan",
+      "imgPath": "images/Like a Rolling Stone"
+    },
+    {
+      "id": "19",
+      "nome": "The Sound of Silence",
+      "artista": "Simon & Garfunkel",
+      "imgPath": "images/The Sound of Silence"
+    },
+    {
+      "id": "20",
+      "nome": "Paint It Black",
+      "artista": "The Rolling Stones",
+      "imgPath": "images/Paint It Black"
+    }
+  ],
+  "userPlaylists" : [
+    {
+      "id" : 1,
+      "userID" : 1,
+      "nome" : "minha playlist 1",
+      "musics" : [
+        {
+          "id": "1",
+          "nome": "Eye of the Tiger",
+          "artista": "Survivor",
+          "imgPath": "images/Eye of the Tiger"
+        }
+      ]
+    }
   ]
+  
 }
