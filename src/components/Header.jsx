@@ -9,6 +9,7 @@ const Header = () => {
     let isHomePage = location.pathname === "/";
     let isFaq = location.pathname ==="/faq"
     let isLogin = location.pathname ==="/login"
+    let isPerfil = location.pathname ==="/perfil"
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-success sticky-top">

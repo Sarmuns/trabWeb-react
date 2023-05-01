@@ -9,6 +9,8 @@ import PlaylistMusics from "./pages/PlaylistMusics";
 import Cadastro from "./pages/Cadastro";
 import Login from "./pages/Login";
 import UserHome from "./pages/UserHome";
+import PerfilPage from "./pages/PerfilPage";
+
 import {
   Routes,
   Route,
@@ -60,6 +62,14 @@ function App() {
         <Route
           path="/login"
           element={<Layout><Login className="login" /></Layout>}
+        />
+        <Route
+          path="/perfil"
+          element={<Layout><PerfilPage className="perfil" /></Layout>}
+        />
+           <Route
+          path="/perfil/:id"
+          element={<Layout><PerfilPage/></Layout>}
         />
         <Route
           path="*"
