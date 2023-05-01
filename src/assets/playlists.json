@@ -193,21 +193,13 @@
       "id": 1,
       "username": "admin",
       "email": "admin",
-      "password": "123",
-      "playlistsid": [
-        "0",
-        "2"
-      ]
+      "password": "123"
     },
     {
       "id": 2,
       "username": "Tester",
       "email": "a",
-      "password": "a",
-      "playlistsid": [
-        "3",
-        "1"
-      ]
+      "password": "a"
     }
   ],
   "musics": [

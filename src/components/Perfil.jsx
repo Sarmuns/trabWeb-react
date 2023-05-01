@@ -41,7 +41,6 @@ const Perfil = () => {
       username: nome,
       email: email,
       password: senha,
-      playlistsid: data.playlistsid,
     };
     axios
       .put(`http://localhost:3000/accounts/${userId}`, newUser)
