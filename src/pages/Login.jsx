@@ -23,6 +23,7 @@ const Login = () => {
                 console.log(response.data)
                 if (response.data.length > 0) {
                     localStorage.setItem('user', JSON.stringify(response.data[0]))
+                    localStorage.setItem('isLoggedIn', true);
                     navigate('/dashboard')
                 } else {
                     alert("E-mail ou senha incorretos!")

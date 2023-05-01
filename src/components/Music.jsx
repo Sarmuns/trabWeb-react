@@ -34,7 +34,7 @@ const Music = (props) => {
                     {data[0].musicas.map((musica, i) => (
                         <AudioPlayer
                             key={i}
-                            audioPath={musica.audioFile}
+                            audioPath={musica.audiofile}
                             musica={musica}
                             setAllPlayersToFalse={setAllPlayersToFalse}
                             index={i}

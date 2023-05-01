@@ -1,5 +1,9 @@
+.music{
+    transition: all .1s ease-in-out;
+    border: 3px solid transparent;
+}
+
 .music:hover {
-    transform: scale(1.01);
-    box-shadow: 1px;
-    border-width: 0px;
+    transform: scale(1.04);
+    border-color: black
 }

@@ -3,7 +3,7 @@
     {
       "nome": "rock alternativo",
       "id": 0,
-      "fotoplaylist": "/playlist/rockalternativo.jpg",
+      "fotoplaylist": "playlist/rockalternativo.jpg",
       "musicas": [
         {
           "nome": "given up",
@@ -190,14 +190,10 @@
   ],
   "accounts": [
     {
-      "id": 1,
-      "username": "admin",
+      "nome": "admin2",
       "email": "admin",
-      "password": "123",
-      "playlistsid": [
-        "0",
-        "2"
-      ]
+      "senha": "123",
+      "id": 1
     },
     {
       "id": 2,

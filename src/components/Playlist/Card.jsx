@@ -19,7 +19,7 @@ const Card = (props) => {
                         key={playlist.id}
                     >
                         <img
-                            src={playlist.fotoPlaylist}
+                            src={playlist.fotoplaylist}
                             className="card bg-success"
                             alt={playlist.nome}
                         />

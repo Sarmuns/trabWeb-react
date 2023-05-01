@@ -1,28 +1,46 @@
 import React from "react";
-import { Link, useLocation} from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Header.css"
 
 
 
 const Header = () => {
     const location = useLocation();
-    let isHomePage = location.pathname === "/";
-    let isFaq = location.pathname ==="/faq"
-    let isLogin = location.pathname ==="/login"
-    let isPerfil = location.pathname ==="/perfil"
+    const isHomePage = location.pathname === "/";
+    const isFaq = location.pathname === "/faq"
+    const isLogin = location.pathname === "/login"
+    const isDashboard = location.pathname === "/dashboard"
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    const user = JSON.parse(localStorage.getItem('user')) || "Usuário";
+
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-success sticky-top">
-            <Link
-                className="navbar-brand mx-3"
-                to="/">
-                <img src="/logo.png"
-                    alt="Logo"
-                    width="30"
-                    height="24"
-                    className="d-inline-block align-text-top img-fluid mx-1" />
-                Spotify
-            </Link>
+            {isLoggedIn ? (
+               <Link
+               className="navbar-brand mx-3"
+               to="/dashboard"
+           >
+               <img src="/logo.png"
+                   alt="Logo"
+                   width="30"
+                   height="24"
+                   className="d-inline-block align-text-top img-fluid mx-1" />
+               Spotify
+           </Link>
+            ) : (
+                <Link
+                    className="navbar-brand mx-3"
+                    to="/"
+                >
+                    <img src="/logo.png"
+                        alt="Logo"
+                        width="30"
+                        height="24"
+                        className="d-inline-block align-text-top img-fluid mx-1" />
+                    Spotify
+                </Link>
+            )}
 
             <div className="collapse navbar-collapse mx-3" id="navbarNav">
                 <ul className="navbar-nav ml-auto">
@@ -41,11 +59,20 @@ const Header = () => {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link
-                            className={isLogin ? 'nav-link  active' : 'nav-link'}
-                            to="/login">
-                            Login
-                        </Link>
+                        {isLoggedIn ? (
+                            <Link
+                                className="nav-link"
+                                to="/perfil"
+                            >
+                                {user.username}
+                            </Link>
+                        ) : (
+                            <Link
+                                className={isLogin ? 'nav-link  active' : 'nav-link'}
+                                to="/login">
+                                Login
+                            </Link>
+                        )}
                     </li>
                 </ul>
             </div>

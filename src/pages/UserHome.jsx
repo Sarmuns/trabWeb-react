@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Musica from "../components/UserHomeFolder/Musica";
 import SearchBar from "../components/Playlist/SearchBar";
 import axios from "axios";
 import "./userhome.css"
@@ -67,25 +67,23 @@ const UserHome = () => {
         <div className="bg-dark">
             <h1 className="text-light mx-3 pt-3">Bem vindo, {user.username}</h1>
             <SearchBar state={searchState} />
-            <h2 className="text-light mx-3 pt-3">Músicas mais tocadas</h2>
+            <h2 className="text-light mx-3 mb-5">Músicas mais tocadas</h2>
             {loading ? (
                 <div className="text-light">Carregando...</div>
             ) : (
 
                 <div className="d-flex flex-row justify-content-center flex-wrap text-center">
                     {searchData.slice(0, 16).map((music, i) => (
-                        <div key={i} className="mx-4">
-                            <img
-                                src={music.imgpath}
-                                alt={music.nome}
-                                style={{ width: '180px', height: '180px', objectFit: 'cover' }}
-                                className="music"
-                                onClick={() => handleMusicClick(i)}
-                            />
-                            <div className="text-center text-white">{music.nome}</div>
-                        </div>
+                        <Musica
+                           
+                            key={i}
+                            music={music}
+                            index={i}
+                            handleMusicClick={handleMusicClick}
+                        />
                     ))}
                 </div>
+
             )
             }
             <h2 className="text-light mx-3 pt-3">Playlists</h2>
