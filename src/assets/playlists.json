@@ -190,15 +190,19 @@
   ],
   "accounts": [
     {
-      "nome": "admin2",
+      "id": 1,
+      "username": "admin",
       "email": "admin",
-      "senha": "123",
-      "id": 1
+      "password": "123",
+      "playlistsid": [
+        "0",
+        "2"
+      ]
     },
     {
       "id": 2,
-      "username": "a",
-      "email": "a@email",
+      "username": "Tester",
+      "email": "a",
       "password": "a",
       "playlistsid": [
         "3",

@@ -13,7 +13,12 @@ const UserHome = () => {
     const [searchData, setSearchData] = useState([]);
     const [search, setSearch] = useState('');
     const [playlistData, setPlaylistData] = useState([]);
-    const user = JSON.parse(localStorage.getItem('user'))
+    const [user, setUser] = useState([]);
+
+    useEffect(() => {
+         setUser(JSON.parse(localStorage.getItem('user')));
+    }, []) // eslint-disable-line
+        
 
     const searchState = (state) => {
         setSearch(state);

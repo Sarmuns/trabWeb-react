@@ -1,26 +1,30 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 
 const Perfil = () => {
+  const navigate = useNavigate();
   const [isEditing, setIsEditing] = useState(false);
+  const [data, setData] = useState([]);
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const userId = JSON.parse(localStorage.getItem('user')).id;
 
+
   useEffect(() => {
     axios
-    .get(`http://localhost:3000/accounts/${userId}`, {
+      .get(`http://localhost:3000/accounts/${userId}`, {
         headers: {
           'Content-Type': 'application/json'
         },
-     
+
       })
       .then((response) => {
-        const { username, email, password } = response.data;
-        setNome(username);
-        setEmail(email);
-        setSenha(password);
+        setData(response.data)
+        setNome(response.data.username)
+        setEmail(response.data.email)
+        setSenha(response.data.password)
       })
       .catch((error) => {
         console.log(error);
@@ -32,20 +36,29 @@ const Perfil = () => {
   };
 
   const handleSave = () => {
+    const newUser = {
+      id: userId,
+      username: nome,
+      email: email,
+      password: senha,
+      playlistsid: data.playlistsid,
+    };
     axios
-      .put(`http://localhost:3000/accounts/${userId}`, {
-        nome,
-        email,
-        senha,
-      })
+      .put(`http://localhost:3000/accounts/${userId}`, newUser)
       .then((response) => {
         setIsEditing(false);
+        localStorage.setItem('user', JSON.stringify(newUser));
         alert("Perfil atualizado com sucesso");
       })
       .catch((error) => {
         console.log(error);
       });
   };
+
+  const handleLogout = () => {
+    navigate('/')
+    localStorage.clear();
+  }
 
   const handleCancel = () => {
     setIsEditing(false);
@@ -57,7 +70,7 @@ const Perfil = () => {
         <h2 className="text-center mb-4"> Seu Perfil </h2>
         <form className="text-center">
           <div className="form-group">
-           
+
             <div className="form-group">
               {isEditing ? (
                 <input
@@ -68,13 +81,13 @@ const Perfil = () => {
                   onChange={(event) => setNome(event.target.value)}
                 />
               ) : (
-                <p>Nome: {nome}</p>
+                <p>Nome: {data.username}</p>
               )}
             </div>
           </div>
 
           <div className="form-group">
-            
+
             <div className="form-group">
               {isEditing ? (
                 <input
@@ -85,13 +98,13 @@ const Perfil = () => {
                   onChange={(event) => setEmail(event.target.value)}
                 />
               ) : (
-                <p>Email: {email}</p>
+                <p>Email: {data.email}</p>
               )}
             </div>
           </div>
 
           <div className="form-group">
-            
+
             <div className="form-group">
               {isEditing ? (
                 <input
@@ -102,20 +115,30 @@ const Perfil = () => {
                   onChange={(event) => setSenha(event.target.value)}
                 />
               ) : (
-                <p>Senha: {senha}</p>
+                <p>Senha: *****</p>
               )}
             </div>
           </div>
 
           <div className="form-group">
             {!isEditing && (
-              <button
-                className="btn btn-success d-flex mx-auto my-3"
-                type="button"
-                onClick={handleEdit}
-              >
-                Editar
-              </button>
+              <div className="d-flex justify-content-between my-3">
+                <button
+                  className="btn btn-success d-flex mx-auto my-3"
+                  type="button"
+                  onClick={handleEdit}
+                >
+                  Editar
+                </button>
+
+                <button
+                  type="button"
+                  className="btn btn-danger d-flex mx-auto my-3"
+                  onClick={handleLogout}
+                >
+                  LogOut
+                </button>
+              </div>
             )}
           </div>
           {isEditing && (
@@ -128,7 +151,7 @@ const Perfil = () => {
                 Salvar
               </button>
               <button
-               
+
 
                 type="button"
                 className="btn btn-danger"
