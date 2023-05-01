@@ -17,10 +17,10 @@ const Perfil = () => {
      
       })
       .then((response) => {
-        const { nome, email, senha } = response.data;
-        setNome(nome);
+        const { username, email, password } = response.data;
+        setNome(username);
         setEmail(email);
-        setSenha(senha);
+        setSenha(password);
       })
       .catch((error) => {
         console.log(error);
