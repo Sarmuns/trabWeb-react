@@ -4,8 +4,8 @@ import { useParams } from "react-router-dom";
 const UserPlaylistView = () => {
     const { id } = useParams(); //real music ID
     const data = JSON.parse(localStorage.getItem('userPlaylist'));
-    const filteredData = data.filter(item => item.id == id);
-    const samplePlaylist = '/playlist/sample.jpg' // eslint-disable-line
+    const filteredData = data.filter(item => item.id == id); // eslint-disable-line
+    const samplePlaylist = '/playlist/sample.jpg'
 
 
     return (
