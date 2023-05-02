@@ -5,7 +5,8 @@ function UserPlaylistCard({ playlist }) {
     const samplePlaylist = '/playlist/sample.jpg'
     return (
         <Link
-            to={`/userPlaylist/${playlist.id}`}
+        className='text-decoration-none'
+            to={`/userPlaylist/${playlist.id}`} //userplaylistview
         >
             <div className="mx-4">
                 <img

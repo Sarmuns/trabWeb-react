@@ -15,13 +15,10 @@ const UserHome = () => {
     const [searchData, setSearchData] = useState([]);
     const [search, setSearch] = useState('');
     const [playlistData, setPlaylistData] = useState([]);
-    const [user, setUser] = useState([]);
     const [hasPlaylists, setHasPlaylists] = useState(false);
     const [playersState, setPlayersState] = useState(Array(searchData.length).fill(false));
+    const user = JSON.parse(localStorage.getItem('user'));
 
-    useEffect(() => {
-        setUser(JSON.parse(localStorage.getItem('user')));
-    }, []) // eslint-disable-line
 
     const searchState = (state) => {
         setSearch(state);
@@ -33,16 +30,21 @@ const UserHome = () => {
             .then(response => {
                 setData(response.data);
                 setSearchData(response.data);
-                localStorage.setItem('musics', JSON.stringify(response.data[0]))
+                localStorage.setItem('musics', JSON.stringify(response.data))
             })
             .catch(error => {
                 console.error(error)
             })
 
-        axios.get(playlistUrl, { params: { userid: user.id } })
+        axios.get(`http://localhost:3000/userplaylists`, {
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            params: {
+                userid: user.id
+            }
+        })
             .then(response => {
-                console.log('aqui')
-                console.log(response.data)
                 setPlaylistData(response.data);
                 localStorage.setItem('userPlaylist', JSON.stringify(response.data))
                 setHasPlaylists(true)
@@ -72,7 +74,21 @@ const UserHome = () => {
     };
 
     const handleCreatePlaylist = () => {
-        console.log('criar playlist')
+        const putData = {
+            userid: user.id,
+            name: "Nova Playlist",
+            musics: []
+          };
+          
+          axios.post(playlistUrl, putData)
+            .then(response => {
+              console.log(response);
+            })
+            .catch(error => {
+              // handle error
+              console.log(error);
+            });
+            window.location.reload()
     }
 
 
@@ -116,7 +132,7 @@ const UserHome = () => {
                 ) : (
 
                     <div className="d-flex flex-row justify-content-center flex-wrap text-center">
-                        {playlistData.slice(0, 4).map((playlist, i) => (
+                        {playlistData.map((playlist, i) => (
                             <UserPlaylistCard
                                 key={i}
                                 playlist={playlist}
@@ -131,7 +147,10 @@ const UserHome = () => {
                                 style={{ width: '180px', height: '180px', objectFit: 'cover' }}
                                 className="playcover"
                             />
-                            <div className="text-center text-white">Crie uma nova playlist</div>
+                            <div 
+                            onClick={handleCreatePlaylist}
+                            className="text-center text-white"
+                            >Crie uma nova playlist</div>
                         </div>
                     </div>
 
