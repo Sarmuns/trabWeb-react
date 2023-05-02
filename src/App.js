@@ -10,6 +10,7 @@ import Cadastro from "./pages/Cadastro";
 import Login from "./pages/Login";
 import UserHome from "./pages/UserHome";
 import PerfilPage from "./pages/PerfilPage";
+import UserPlaylistView from "./pages/UserPlaylistView";
 
 import {
   Routes,
@@ -31,48 +32,52 @@ function App() {
   return (
     <BrowserRouter>
 
-        <Routes>
-          <Route
-            path="/"
-            element={<Layout><Home className="home" /></Layout>}
-          />
-          <Route
-            path="/cadastro"
-            element={<Layout><Cadastro className="cadastro" /></Layout>}
-          />
-          <Route
-            path="/login"
-            element={<Layout><Login className="login" /></Layout>}
-          />
-          <Route
-            path="/dashboard"
-            element={<Layout><UserHome className="userHome" /></Layout>}
-          />
-          <Route
-            path="/faq"
-            element={<Layout><Faq className="faq" /></Layout>}
-          />
-          <Route
-            path="/playlist"
-            element={<Layout><Playlist className="playlist" /></Layout>}
-          />
-          <Route
-            path="/playlist/:id"
-            element={<Layout><PlaylistMusics /></Layout>}
-          />
-          <Route
-            path="/login"
-            element={<Layout><Login className="login" /></Layout>}
-          />
-          <Route
-            path="/perfil"
-            element={<Layout><PerfilPage className="perfil" /></Layout>}
-          />
-          <Route
-            path="*"
-            element={<NotFound />}
-          />
-        </Routes>
+      <Routes>
+        <Route
+          path="/"
+          element={<Layout><Home className="home" /></Layout>}
+        />
+        <Route
+          path="/cadastro"
+          element={<Layout><Cadastro className="cadastro" /></Layout>}
+        />
+        <Route
+          path="/login"
+          element={<Layout><Login className="login" /></Layout>}
+        />
+        <Route
+          path="/dashboard"
+          element={<Layout><UserHome className="userHome" /></Layout>}
+        />
+        <Route
+          path="/faq"
+          element={<Layout><Faq className="faq" /></Layout>}
+        />
+        <Route
+          path="/playlist"
+          element={<Layout><Playlist className="playlist" /></Layout>}
+        />
+        <Route
+          path="/playlist/:id"
+          element={<Layout><PlaylistMusics /></Layout>}
+        />
+        <Route
+          path="/login"
+          element={<Layout><Login className="login" /></Layout>}
+        />
+        <Route
+          path="/perfil"
+          element={<Layout><PerfilPage className="perfil" /></Layout>}
+        />
+        <Route
+          path="/userPlaylist/:id"
+          element={<Layout><UserPlaylistView className="userplay" /></Layout>}
+        />
+        <Route
+          path="*"
+          element={<NotFound />}
+        />
+      </Routes>
     </BrowserRouter>
 
   );

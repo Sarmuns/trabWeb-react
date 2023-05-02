@@ -349,14 +349,43 @@
       "id": 1,
       "userid": 1,
       "name": "minha playlist 1",
-      "musics": [1,2,3],
+      "musics": [{
+        "id": "1",
+        "nome": "eye of the tiger",
+        "artista": "survivor",
+        "imgpath": "img/eyeoftiger.png",
+        "audiopath": "music/linkinpark_givenup.mp3"
+      },
+      {
+        "id": "2",
+        "nome": "sweet child o' mine",
+        "artista": "guns n' roses",
+        "imgpath": "img/sweetchild.png",
+        "audiopath": "music/linkinpark_givenup.mp3"
+      }
+    ],
+        
       "cover" : ""
     },
     {
-      "id": 2,
+      "id": 37,
       "userid": 1,
       "name": "minha playlist 2",
-      "musics": [3,4,5],
+      "musics": [{
+        "id": "3",
+        "nome": "billie jean",
+        "artista": "michael jackson",
+        "imgpath": "img/billiejean.png",
+        "audiopath": "music/linkinpark_givenup.mp3"
+      },
+      {
+        "id": "4",
+        "nome": "bohemian rhapsody",
+        "artista": "queen",
+        "imgpath": "img/bohemian.jpg",
+        "audiopath": "music/linkinpark_givenup.mp3"
+      }
+    ],
       "cover" : "img/billiejean.png"
     }
   ]
