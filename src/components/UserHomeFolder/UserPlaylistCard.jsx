@@ -12,7 +12,7 @@ function UserPlaylistCard({ playlist }) {
                     src={playlist.cover ? playlist.cover : samplePlaylist}
                     alt={playlist.name}
                     style={{ width: '180px', height: '180px', objectFit: 'cover' }}
-                    className="playcover"
+                    className="playcover rounded-circle"
                 />
                 <div className="text-center text-white">{playlist.name}</div>
             </div>
