@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+/* eslint-disable */
+import React, { useEffect, useState, useRef } from "react";
 import Musica from "../components/UserHomeFolder/Musica";
 import UserPlaylistCard from "../components/UserHomeFolder/UserPlaylistCard";
 import SearchBar from "../components/Playlist/SearchBar";
@@ -16,6 +17,7 @@ const UserHome = () => {
     const [playlistData, setPlaylistData] = useState([]);
     const [user, setUser] = useState([]);
     const [hasPlaylists, setHasPlaylists] = useState(false);
+    const [playersState, setPlayersState] = useState(Array(searchData.length).fill(false));
 
     useEffect(() => {
         setUser(JSON.parse(localStorage.getItem('user')));
@@ -42,6 +44,7 @@ const UserHome = () => {
                 console.log('aqui')
                 console.log(response.data)
                 setPlaylistData(response.data);
+                localStorage.setItem('userPlaylist', JSON.stringify(response.data))
                 setHasPlaylists(true)
                 setLoading(false)
             })
@@ -62,12 +65,18 @@ const UserHome = () => {
 
     }, [search])
 
-    const handleMusicClick = (i) => {
-        console.log(i);
+    const setAllPlayersToFalse = (index) => {
+        const newPlayersState = Array(playersState.length).fill(false);
+        newPlayersState[index] = true;
+        setPlayersState(newPlayersState);
+    };
+
+    const handleCreatePlaylist = () => {
+        console.log('criar playlist')
     }
 
 
-   
+
 
 
 
@@ -88,11 +97,11 @@ const UserHome = () => {
                     <div className="d-flex flex-row justify-content-center flex-wrap text-center">
                         {searchData.slice(0, 16).map((music, i) => (
                             <Musica
-
+                                setAllPlayersToFalse={setAllPlayersToFalse}
                                 key={i}
                                 music={music}
                                 index={i}
-                                handleMusicClick={handleMusicClick}
+                                isPlaying={playersState[i]}
                             />
                         ))}
                     </div>
@@ -111,17 +120,19 @@ const UserHome = () => {
                             <UserPlaylistCard
                                 key={i}
                                 playlist={playlist}
-                                />
+                            />
                         ))}
-                          <div className="mx-4">
+                        <div
+                            onClick={handleCreatePlaylist}
+                            className="mx-4">
                             <img
-                              src={'playlist/addSign.png'}
-                              alt='adicione uma playlist'
-                              style={{ width: '180px', height: '180px', objectFit: 'cover' }}
-                              className="playcover"
+                                src={'playlist/addSign.png'}
+                                alt='adicione uma playlist'
+                                style={{ width: '180px', height: '180px', objectFit: 'cover' }}
+                                className="playcover"
                             />
                             <div className="text-center text-white">Crie uma nova playlist</div>
-                          </div>
+                        </div>
                     </div>
 
                 )

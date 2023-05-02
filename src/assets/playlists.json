@@ -207,121 +207,141 @@
       "id": "1",
       "nome": "eye of the tiger",
       "artista": "survivor",
-      "imgpath": "img/eyeoftiger.png"
+      "imgpath": "img/eyeoftiger.png",
+      "audiopath": "music/linkinpark_givenup.mp3"
     },
     {
       "id": "2",
       "nome": "sweet child o' mine",
       "artista": "guns n' roses",
-      "imgpath": "img/sweetchild.png"
+      "imgpath": "img/sweetchild.png",
+      "audiopath": "music/linkinpark_givenup.mp3"
     },
     {
       "id": "3",
       "nome": "billie jean",
       "artista": "michael jackson",
-      "imgpath": "img/billiejean.png"
+      "imgpath": "img/billiejean.png",
+      "audiopath": "music/linkinpark_givenup.mp3"
     },
     {
       "id": "4",
       "nome": "bohemian rhapsody",
       "artista": "queen",
-      "imgpath": "img/bohemian.jpg"
+      "imgpath": "img/bohemian.jpg",
+      "audiopath": "music/linkinpark_givenup.mp3"
     },
     {
       "id": "5",
       "nome": "hotel california",
       "artista": "eagles",
-      "imgpath": "img/hotelcalifornia.jpg"
+      "imgpath": "img/hotelcalifornia.jpg",
+      "audiopath": "music/linkinpark_givenup.mp3"
     },
     {
       "id": "6",
       "nome": "back in black",
       "artista": "ac/dc",
-      "imgpath": "img/backinblack.png"
+      "imgpath": "img/backinblack.png",
+      "audiopath": "music/linkinpark_givenup.mp3"
     },
     {
       "id": "7",
       "nome": "smells like teen spirit",
       "artista": "nirvana",
-      "imgpath": "img/smellslike.jpg"
+      "imgpath": "img/smellslike.jpg",
+      "audiopath": "music/soad_chopsuey.mp3"
     },
     {
       "id": "8",
       "nome": "stairway to heaven",
       "artista": "led zeppelin",
-      "imgpath": "img/stairway.jpg"
+      "imgpath": "img/stairway.jpg",
+      "audiopath": "music/soad_chopsuey.mp3"
     },
     {
       "id": "9",
       "nome": "imagine",
       "artista": "john lennon",
-      "imgpath": "img/imagine.jpg"
+      "imgpath": "img/imagine.jpg",
+      "audiopath": "music/soad_chopsuey.mp3"
     },
     {
       "id": "10",
       "nome": "thunderstruck",
       "artista": "ac/dc",
-      "imgpath": "img/thunderstruck.png"
+      "imgpath": "img/thunderstruck.png",
+      "audiopath": "music/soad_chopsuey.mp3"
     },
     {
       "id": "11",
       "nome": "another brick in the wall",
       "artista": "pink floyd",
-      "imgpath": "img/thewall.png"
+      "imgpath": "img/thewall.png",
+      "audiopath": "music/soad_chopsuey.mp3"
     },
     {
       "id": "12",
       "nome": "livin' on a prayer",
       "artista": "bon jovi",
-      "imgpath": "img/livinon.jpg"
+      "imgpath": "img/livinon.jpg",
+      "audiopath": "music/soad_chopsuey.mp3"
     },
     {
       "id": "13",
       "nome": "november rain",
       "artista": "guns n' roses",
-      "imgpath": "img/november.jpg"
+      "imgpath": "img/november.jpg",
+      "audiopath": "music/soad_chopsuey.mp3"
     },
     {
       "id": "14",
       "nome": "don't stop believin'",
       "artista": "journey",
-      "imgpath": "img/dontstop.jpg"
+      "imgpath": "img/dontstop.jpg",
+      "audiopath": "music/soad_chopsuey.mp3"
     },
     {
       "id": "15",
       "nome": "purple rain",
       "artista": "prince",
-      "imgpath": "img/purplerain.jpg"
+      "imgpath": "img/purplerain.jpg",
+      "audiopath": "music/soad_chopsuey.mp3"
     },
     {
       "id": "16",
       "nome": "kashmir",
       "artista": "led zeppelin",
-      "imgpath": "img/kashmir.jpg"
+      "imgpath": "img/kashmir.jpg",
+      "audiopath": "music/soad_chopsuey.mp3"
     },
     {
       "id": "17",
       "nome": "my heart will go on",
       "artista": "celine dion",
-      "imgpath": "img/myheartwill.jpg"
+      "imgpath": "img/myheartwill.jpg",
+      "audiopath": "music/soad_chopsuey.mp3"
     },
     {
       "id": "18",
       "nome": "like a rolling stone",
       "artista": "bob dylan",
-      "imgpath": "img/likearolling.jpg"
+      "imgpath": "img/likearolling.jpg",
+      "audiopath": "music/soad_chopsuey.mp3"
     },
     {
       "id": "19",
       "nome": "the sound of silence",
       "artista": "simon & garfunkel",
-      "imgpath": "img/thesound.jpg"
+      "imgpath": "img/thesound.jpg",
+      "audiopath": "music/soad_chopsuey.mp3"
     },
     {
       "id": "20",
       "nome": "paint it black",
       "artista": "the rolling stones",
-      "imgpath": "img/paintitblack.jpg"
+      "imgpath": "img/paintitblack.jpg",
+      "audiopath": "music/soad_chopsuey.mp3"
     }
   ],
   "userplaylists": [
