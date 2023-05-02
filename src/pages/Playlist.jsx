@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import SearchBar from "../components/Playlist/SearchBar";
 import Card from "../components/Playlist/Card";
 import axios from "axios";
 
@@ -21,8 +20,8 @@ const Playlist = () => {
   }, []);
 
   return (
-    <div className="bg bg-dark d-flex flex-column">
-      <SearchBar />
+    <div className="bg bg-dark d-flex flex-column py-5">
+
       {isLoading ? <h1>Loading...</h1> : <Card data={data} />}
       
     </div>
