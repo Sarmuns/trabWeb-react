@@ -17,7 +17,7 @@ Para executar o projeto, siga as instruções abaixo:
 2. Abra um terminal na pasta raiz do projeto
 3. Execute o comando `npm install` para instalar as dependências do projeto
 4. Execute o comando `npm start` para iniciar o servidor local
-5. Abra o seu navegador e acesse o endereço `http://localhost:3000`
+5. Abra o seu navegador e acesse o endereço `http://localhost:3001`
 
 ## Funcionalidades
 
