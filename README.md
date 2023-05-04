@@ -1,7 +1,7 @@
 # Clone do Spotify
 
 Este projeto é clone do Spotify, desenvolvido utilizando React e Bootstrap.
-Em desenvolvimento, aproximadamente 20% feito.
+Em desenvolvimento, aproximadamente 80% feito.
 
 ## Tecnologias Utilizadas
 
