@@ -5,10 +5,9 @@ Em desenvolvimento, aproximadamente 20% feito.
 
 ## Tecnologias Utilizadas
 
-- React
+- React/Javascript
 - Bootstrap
-- HTML
-- CSS
+- HTML/CSS
 
 ## Como Executar o Projeto
 
@@ -22,12 +21,17 @@ Para executar o projeto, siga as instruções abaixo:
 
 ## Funcionalidades
 
-- Visualizar Playlists
+- Criar conta
+- Logar
+- Escutar músicas
+- Buscar músicas
+- Criar playlists
+- Editar playlists (remover música, editar nome playlist)
+- Adicionar música na playlist (por hora apenas músicas aleatorias, em breve músicas selecionadas)
 
 ## Integrantes
 
 - Filipe Souto Maior 🎤
-- Gabriel 🎸
 - Julia Nogueira 🎵
 - Mariana Barata 🎧
 - Samuel Alcântara 🎹
