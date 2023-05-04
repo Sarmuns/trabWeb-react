@@ -13,6 +13,7 @@ Em desenvolvimento, aproximadamente 80% feito.
 
 Para executar o projeto, siga as instruções abaixo:
 
+Importante ter o json-server e iniciar o arquivo playlist.json localizado em... src/assets na porta 3000
 1. Clone este repositório
 2. Abra um terminal na pasta raiz do projeto
 3. Execute o comando `npm install` para instalar as dependências do projeto
